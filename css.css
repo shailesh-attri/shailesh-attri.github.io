@@ -10,6 +10,8 @@
     scroll-padding-top: 2rem;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    overflow: hidden;
+
 }
 :root {
     --main-color: #033a80;
@@ -23,6 +25,7 @@
 html{
     scroll-behavior: smooth;
     width:100%
+    
 }
 *::selection {
     color: var(--main-color);
@@ -109,7 +112,7 @@ html{
     
   }
   #menu{
-    width:35px;
+    width:40px;
     height:30px;
     margin:30px 0 20px 20px;
     cursor: pointer;
@@ -216,10 +219,10 @@ header.shadow {
     
   }
   
-  body.active {
+  /* body.active {
     background-color: #04AA6D;
     color: white;
-  }
+  } */
   
   
   
@@ -569,8 +572,13 @@ header.shadow {
   /* For Mobile */
  @media (max-width: 991px) {
   #menu{
-    display: none;
+    font-size: 40px;
+
   }
+  html{
+    scroll-behavior: smooth;
+    width:100%
+}
   .home-img img{
     width: 100%;
     height: auto;
@@ -587,7 +595,7 @@ header.shadow {
     top:100%;
     right: 0;
     width: 300px;
-    height: 40vh;
+    height: 50vh;
     background:#4d9559;
     display:flex;
     align-items: center;
@@ -614,6 +622,10 @@ header.shadow {
     width: 100%;
     height: auto;
   }
+}
+html{
+  scroll-behavior: smooth;
+  width:100%
 }
 
 @media (max-width: 768px) {
@@ -685,10 +697,7 @@ header.shadow {
     grid-template-columns: 1fr;
   }
 
-  .about-img {
-    display: flex;
-    justify-content: center;
-  }
+  
 
   .skills-container {
     grid-template-columns: 1fr;
@@ -718,6 +727,10 @@ header.shadow {
     --big-font: 1.7rem;
     --medium-font: 1.1rem;
   }
+  html{
+    scroll-behavior: smooth;
+    width:100%
+}
 
   .home-text span {
     font-size: 1rem;
