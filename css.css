@@ -651,6 +651,9 @@ html{
   header {
     padding: 11px 4%;
   }
+  header .navbar li a{
+    display: none;
+  }
 
   
 
@@ -678,18 +681,18 @@ html{
     color: white;
   } */
 
-  #darkmode {
+  /* #darkmode {
     position: absolute;
     top: 1.4rem;
     right: 2rem;
   }
-  /* #darkmode .navbar.active a{
-    color: white;
-  } */
-
+  /* #darkmode .navbar.active a{ */
+    /* color: white;
+  } */ */
+/* 
   .scroll-down {
     display: none;
-  }
+  } */
 
   .home {
     grid-template-columns: 0.5fr 3fr;
