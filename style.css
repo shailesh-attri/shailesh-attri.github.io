@@ -179,16 +179,11 @@
 
 
  .about-container {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 1rem;
+   
    margin-top: 2rem;
  }
 
- .about-img img {
-   width: 80%;
-   border-radius: 0.5rem;
- }
+ 
 
  .about-text p {
    font-size: var(--p-font);
@@ -198,6 +193,7 @@
 
  .information {
    margin: 1rem 0 1.4rem;
+   align-items: center;
  }
 
  .information .info-box {
