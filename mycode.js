@@ -23,8 +23,13 @@ function msgsend(){
 // };
 // }
 function mymenu(){
-  document.getElementById("menu").classList.toggle("active");
-  document.getElementById("nav").classList.toggle("active");
+  let menu =document.getElementById("menu");
+  let navbar=document.getElementById("nav");
+
+  menu.onclick = () => {
+  menu.classList.toggle("bx-menu");
+  navbar.classList.toggle("active");
+}
 }
 
 // const menuIcon = document.getElementById('menu-icon');
@@ -77,3 +82,13 @@ function darkModeToggle() {
     toggleIcon.classList.add('bx-moon');
   }
 }
+
+const sr=ScrollReveal({
+  distance:'65px',
+  duration:2600,
+  delay:450,
+  reset:true
+});
+sr.reveal('.social',{delay:500, origin:'left'});
+sr.reveal('.home-text',{delay:200, origin:'top'});
+sr.reveal('.home-img',{delay:450, origin:'top'});
