@@ -651,11 +651,13 @@ html{
   header {
     padding: 11px 4%;
   }
-  
+  header .navbar li a{
+    display: none;
+  }
 
   
 
-  header .navbar {
+  /* header .navbar {
     position: absolute;
     top: -500px;
     left: 0;
@@ -666,27 +668,27 @@ html{
     box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
     transition: 0.2s ease;
     text-align: center;
-  } 
+  } */
 
-  .navbar.active {
+  /* .navbar.active {
     top: 100%;
-  } 
+  } */
 
-  .navbar a {
+  /* .navbar a {
     padding: 1.5rem;
     display: block;
     background: black;
     color: white;
-  } 
+  } */
 
-   #darkmode {
+  #darkmode {
     position: absolute;
     top: 1.4rem;
     right: 2rem;
   }
   #darkmode .navbar.active a{ 
      color: white;
-  }  
+  } 
 
   .scroll-down {
     display: none;
