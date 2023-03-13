@@ -581,10 +581,10 @@ header.shadow {
  
   /* For Mobile */
  @media (max-width: 991px) {
-  #menu{
+  /* #menu{
     font-size: 40px;
 
-  }
+  } */
   html{
     scroll-behavior: smooth;
     width:100%
@@ -601,7 +601,7 @@ header.shadow {
     padding: 50px 4%;
     width: 100%;
   }
-  .navbar {
+  /* .navbar {
     position: absolute;
     top:100%;
     right: 0;
@@ -613,15 +613,15 @@ header.shadow {
     flex-direction:column ;
     padding: 50px 20px;
     transition: all 0.55s ease;
-  }
-  .navbar a{
+  } */
+  /* .navbar a{
     display: block;
     margin:7px 0;
     margin-left: 0;
   }
   .navbar .active{
     right:0;
-  }
+  } */
 }
 
 @media (max-width: 881px) {
@@ -654,7 +654,7 @@ html{
 
   
 
-  header .navbar {
+  /* header .navbar {
     position: absolute;
     top: -500px;
     left: 0;
@@ -665,27 +665,27 @@ html{
     box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
     transition: 0.2s ease;
     text-align: center;
-  }
+  } */
 
-  .navbar.active {
+  /* .navbar.active {
     top: 100%;
-  }
+  } */
 
-  .navbar a {
+  /* .navbar a {
     padding: 1.5rem;
     display: block;
     background: black;
     color: white;
-  }
+  } */
 
   #darkmode {
     position: absolute;
     top: 1.4rem;
     right: 2rem;
   }
-  #darkmode .navbar.active a{
+  /* #darkmode .navbar.active a{
     color: white;
-  }
+  } */
 
   .scroll-down {
     display: none;

@@ -23,14 +23,14 @@ function msgsend(){
 // };
 // }
 function mymenu(){
-  let menu =document.getElementById("menu");
-  let navbar=document.getElementById("nav");
+//   let menu =document.getElementById("menu");
+//   let navbar=document.getElementById("nav");
 
-  menu.onclick = () => {
-  menu.classList.toggle("bx-menu");
-  navbar.classList.toggle("active");
-}
-}
+//   menu.onclick = () => {
+//   menu.classList.toggle("bx-menu");
+//   navbar.classList.toggle("active");
+// }
+
 
 // const menuIcon = document.getElementById('menu-icon');
 // const menu = document.querySelector('.menu');
@@ -40,18 +40,19 @@ function mymenu(){
 //   menu.classList.toggle('show');
 // });
 
-// const hamburger = document.getElementById('hamburger');
-// const menu = document.getElementById('menu');
+const hamburger = document.getElementById('menu');
+const menu = document.getElementById('navbar');
 
-// hamburger.addEventListener('click', () => {
-//   hamburger.classList.toggle('open');
-//   menu.classList.toggle('show');
-//   if (menu.classList.contains('show')) {
-//     menu.style.height = '200px';
-//   } else {
-//     menu.style.height = '0';
-//   }
-// });
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('bx-menu');
+  menu.classList.toggle('active');
+  if (menu.classList.contains('active')) {
+    menu.style.height = '200px';
+  } else {
+    menu.style.height = '0';
+  }
+});
+}
 
 // function myFunction() {
 //   var x = document.getElementById("myLinks");
