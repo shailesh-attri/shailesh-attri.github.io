@@ -369,11 +369,11 @@ header.shadow {
     margin-top: 4rem;
   }
   .bars{
-    padding: 0px 140px;
+    padding: 0px 45px;
     /* border-color: blue; */
     padding-bottom: 5px;
     border-radius: 48px;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 0px 0px 10px black;
   }
   
  
@@ -407,7 +407,7 @@ header.shadow {
     bottom: 0;
     left: 0;
     height: 0.5rem;
-    background: red;
+    background: rgb(152, 245, 30);
     border-radius: 0.5rem;
   }
  
