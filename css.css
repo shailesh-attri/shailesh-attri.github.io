@@ -11,6 +11,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     
+    
 
 }
 :root {
@@ -142,18 +143,34 @@ body{
     color: azure;
     
     width:100%
+    
 }
 .heading {
     text-align: center;
+    
   }
  
   .heading h2 {
     font-size: 30px;
+    
+    
   }
  
   .heading span {
     font-size: var(--p-font);
     color: rgb(2, 166, 70);
+  }
+  @keyframes looping{
+    0% { transition:all 400ms ease-in-out;
+      transform: perspective(500px)  rotate3d(0, 0, 0, 0deg);}
+    25% { transition:all 400ms ease-in-out;
+      transform: perspective(500px)  rotate3d(0, -50, 0, 30deg); }
+    50% { transition:all 400ms ease-in-out;
+      transform: perspective(500px)  rotate3d(0, 0, 0, 0deg); }
+    75% { transition:all 400ms ease-in-out;
+      transform: perspective(500px)  rotate3d(0, 50, 0, 30deg); }
+    100% {transition:all 400ms ease-in-out;
+      transform: perspective(500px)  rotate3d(0, 0, 0, 30deg); }
   }
 
 
@@ -171,6 +188,7 @@ header {
     transition: 0.2s;
     box-shadow: -3px -3px 7px #ffffff73,
       2px 2px 5px rgba(94, 104, 121, 0.288);
+      
   }
 .window-scroll{
     background-color:var(--hover);
@@ -187,6 +205,9 @@ header.shadow {
     font-size: 1.61rem;
     font-weight: 600;
     color: white;
+    animation-name: looping;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
  
   .logo span {
@@ -240,6 +261,7 @@ header.shadow {
     grid-template-columns: 0.2fr 1fr 1fr;
     align-items: center;
     gap: 1rem;
+    
   }
   .home-img {
     order: 3;
@@ -247,10 +269,14 @@ header.shadow {
   .home-img img {
     width: 100%;
     
+    
   }
   .home-img:hover{
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 10px gray;
+    
+    transition:all 400ms ease-in-out;
+    
   }
  
   .home-text span {
@@ -269,6 +295,7 @@ header.shadow {
   .home-text h2 {
     font-size: 1rem;
     font-weight: 400;
+    
   }
  
   .home-text p {
