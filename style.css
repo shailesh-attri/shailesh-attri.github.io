@@ -646,6 +646,7 @@ section.service .service-icon:hover{
     @media (max-width: 991px) {
         #menu{
           font-size: 40px;
+          display: block;
       
         }
         html{
@@ -726,6 +727,7 @@ section.service .service-icon:hover{
             padding: 50px 20px;
             transition: all 0.55s ease;
             opacity: 0;
+            visibility: hidden;
           }
           .navbar a{
             display: block;
@@ -733,7 +735,7 @@ section.service .service-icon:hover{
             margin-left: 0;
           }
           .navbar .active{
-            right:0;
+            opacity: 1;
           }
     }
    
