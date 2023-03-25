@@ -67,12 +67,13 @@ section{
     display: none;
     background-color: transparent;
     cursor: pointer;
-    font-size: 30px;
-    margin:0 2rem;
-    padding: 2px.3rem;
+    font-size: 20px;
+    margin:0 1rem;
+    padding: 1px .3rem;
     font-weight: bold;
     color: var(--green);
     border: 2px solid var(--green);
+    transition: all 0.6s linear;
 }
 
 /* Media queries */
@@ -644,8 +645,8 @@ section.service .service-icon:hover{
         
     }
     @media (max-width: 991px) {
-        #menu{
-          font-size: 40px;
+        #menu-btn{
+         
           display: block;
       
         }
@@ -714,29 +715,56 @@ section.service .service-icon:hover{
             .links .logo2 {
                     margin-bottom: -30px;
             }
-        .navbar {
+        header .navbar {
             position: absolute;
-            top:100%;
-            right: 0;
-            width: 300px;
-            height: 50vh;
-            background:#4d9559;
-            display:flex;
-            align-items: center;
-            flex-direction:column ;
-            padding: 50px 20px;
+            top:115%;
+            transform-origin: top right;
+            width: 250px;
+           font-size: 10px;
+           border-radius:20px ;
+           box-shadow: 1px 2px 10px 0px rgb(46, 82, 46);
+            background:#ffffff;
+            border: 1.5px solid ;
+            border-color: rgb(13, 124, 13);
+            right: 2rem;
             transition: all 0.55s ease;
             opacity: 0;
             visibility: hidden;
+            transform: translateX(150%);
+            
+
+            transition: all 0.5s ease;
+          
+          
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header .navbar .list {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        header .navbar .list li{
+            margin: 0;
+        }
+          
+          header .navbar a{
+            font-size: 1rem;
+        display: block;
           }
-          .navbar a{
-            display: block;
-            margin:7px 0;
-            margin-left: 0;
+          header ul li a{
+            padding: 10px 0;
           }
-          .navbar .active{
+          .header .navbar.active {
             opacity: 1;
+            transform: translateX(0%);
+            visibility: visible;
+            transition: all cubic-bezier(0.86,0,0.07);
           }
+          
     }
    
     @media (max-width: 800px) {
