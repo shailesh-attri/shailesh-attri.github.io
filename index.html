@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galgotia's Hospital</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
 </head>
 <body>
@@ -15,20 +15,23 @@
     <header class="header" id="header" >
         
         <label for="" class="logo">
-            <i class="fas fa-heartbeat"> </i>Galgotia's Hospital
+            <i class="fas fa-heartbeat"> </i>Galgotias Hospital
         </label>
         
-        <div class="navbar">
-            <ul class="links">
+        <div class="navbar" id="navbar">
+            <ul class="list">
                 <li><a href="#" class="nav-link-fade-up">Home</a></li>
                 <li><a href="#avail" class="nav-link-fade-up">Availability</a></li>
-                <li>  <a href="" class="nav-link-fade-up">Appointment</a></li>
-                <li>   <a href="#service" class="nav-link-fade-up">Service</a></li>
-                    <li>   <a href="" class="nav-link-fade-up">Contact</a></li>
+                <li><a href="#service" class="nav-link-fade-up">Service</a></li>
+                <li><a href="#hospital" class="nav-link-fade-up">About us</a></li>
+                
+                <li><a href="#doctors" class="nav-link-fade-up">Doctors</a></li>
+                <li><a href="#appointment" class="nav-link-fade-up">Appointment</a></li>
+                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li>
                     
                 </ul>
             </div>
-            
+            <div id="menu-btn" class="fas fa-bars" onclick="toggleNav()"></div>
             
     </header>
     
@@ -39,8 +42,8 @@
             <img src="image/home-img.svg" alt="">
         </div>
         <div class="content">
-            <h1 class="heading">Stay Safe Stay Healthy</h1>
-            <p>Galgotia Hospital is a well-known hospital located in Greater Noida, India. The hospital is known for its excellent medical facilities, state-of-the-art infrastructure, and highly trained medical staff, a wide range of medical services, including cardiology, neurology, orthopedics, gastroenterology, and many other specialties. </p>
+            <h1 class="heading1">Stay Safe Stay Healthy</h1>
+            <p>Galgotia's Hospital is a well-known hospital located in Greater Noida, India. The hospital is known for its excellent medical facilities, state-of-the-art infrastructure, and highly trained medical staff. </p>
             <div class="btn1">
                 <button type="button" class="btn" onclick="call()">Contact us</button>
             </div>
@@ -120,5 +123,190 @@
         </div>
         
     </section>
+    <!-- ------------ -->
+    <!-- ------------ -->
+
+    <section class="about-hos" id="hospital" style="background-color: #f1f1f1;">
+        <h1 class="heading">About us</h1>
+        <div class="hospital">
+            <div class="img">
+                <img src="image/about-img.svg" alt="">
+            </div>
+            <div class="content">
+                <h1 class="abt-head">We'll take care of your Health</h1>
+                <p>Galgotias Hospital is a multi-specialty hospital located in Greater Noida, Uttar Pradesh, India. The hospital provides a wide range of medical services, including cardiology, neurology, orthopedics, gastroenterology, and oncology, among others. </p>
+                    <p>
+The hospital has a team of highly qualified and experienced doctors, nurses, and other medical staff. In addition, the hospital also offers various facilities such as 24-hour emergency services, pharmacy, laboratory, radiology, and blood bank, among others. 
+                    </p>
+                
+                
+            </div>
+        </div>
+       
+    </section>
+    <!-- ---------------- -->
+    <!-- ---------------- -->
+
+    <section class="doctors" id="doctors">
+        <h1 class="heading">Our Doctors</h1>
+        <div class="doctor-container">
+            <div class="box">
+                <img src="image/doctor1.jpg" alt="">
+                <h3>Dr. S C Rajendran</h3>
+                <p>Dermatologist  </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor2.jpg" alt="">
+                <h3>Dr. M G Gopal</h3>
+                <p>Gastroenterologist </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor3.jpg" alt="">
+                <h3>Dr. Uma Rai
+                    </h3>
+                <p>
+                    Gynecologist/Obstetrician  </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor4.jpg" alt="">
+                <h3>Dr. Rajendra 
+                   </h3>
+                <p>General Physician</p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor5.jpg" alt="">
+                <h3>Dr. Ajay Kumar</h3>
+                <p>Gastroenterologist </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor6.jpg" alt="">
+                <h3>Dr. Rajiv Agarwal</h3>
+                <p>Cardiologist </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+        </div>
+        
+    </section>
+    <!-- ------------- -->
+    <!-- -------------- -->
+
+    <section class="appointment" style="background-color: #f1f1f1;" id="appointment">
+        <h1 class="heading">Book Appointment</h1>
+        <div class="input-container">
+            <form>
+                <div class="form-container">
+                    
+                </div>
+                <h3>Patient Information:</h3>
+                <label for="fullname">Full Name:</label>
+                <input placeholder="Shailesh" type="text" id="fullname" name="fullname" required>
+        
+                <label for="dob">Date of Birth:</label>
+                <input type="date" placeholder="09/11/2001" id="dob" name="dob" required>
+        
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male" >Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+        
+                <label for="address">Address:</label>
+                <textarea id="address"  name="address" required></textarea>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="+91-90...." name="phone" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="shailesh...@gmail.com" name="email" required>
+        
+                
+        
+                
+                <div class="sub-">
+                    <input type="submit" value="Submit" class="submit" onclick="submit()">
+                </div>
+                
+            </form>
+        </div>
+    </section>
+        <!-- ----------------- -->
+        <!-- ----------------- -->
+
+        <section class="links" id="contact-us">
+            <div class="all-container">
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="#home"> <i class="fas fa-chevron-right"></i> Home </a>
+                    <a href="#avail"> <i class="fas fa-chevron-right"></i> Availability </a>
+                    <a href="#services"> <i class="fas fa-chevron-right"></i> Services </a>
+                    <a href="#hospital"> <i class="fas fa-chevron-right"></i> About us </a>
+                    <a href="#doctors"> <i class="fas fa-chevron-right"></i> Doctors </a>
+                    <a href="#appointment"> <i class="fas fa-chevron-right"></i> Appointment</a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> Contact us</a>
+                </div>
+                <div class="box">
+                    <h3>Our services</h3>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+                </div>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> +91-9045074895 </a>
+                    <a href="#"> <i class="fas fa-phone"></i> +91----------- </a>
+                <a href="#"> <i class="fas fa-envelope"></i> shaileshattri83@gmail.com</a>
+                    <a href="#"> <i class="fas fa-envelope"></i> galgotia@gmail.com </a>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> Greater Noida, 212144</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+                </div>
+            </div>
+            <h1 for="" class="logo2">
+                <i class="fas fa-heartbeat"> </i>&nbsp;&nbsp;Galgotias Hospital
+            </h1>
+        </section>
+
+        <!-- --------- -->
+        <!-- --------- -->
+        <footer class="my-footer">
+            <div class="footer">
+                <p>Created by Shailesh Attri | All rights reserved </p>
+            </div>
+        </footer>
+        
+
+        <!-- <div class="logo">Soft Landing</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+
+            </ul>
+        </nav> -->
+        
 </body>
 </html>
