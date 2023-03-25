@@ -25,12 +25,12 @@
   });
 
   function toggleNav() {
-    const menuBtn = document.getElementById('menu-btn');
-    const navList = document.getElementById('navbar');
+    const menuBtn = document.querySelector('#menu-btn');
+    const navList = document.querySelector('.navbar');
     
+    menuBtn.classList.toggle('fa-times');
     menuBtn.classList.toggle('fa-bars');
-    menuBtn.classList.toggle('fa-bars');
-    navList.classList.toggle('show');
+    navList.classList.toggle('active');
     
   }
   
