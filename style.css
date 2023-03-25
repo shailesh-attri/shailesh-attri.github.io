@@ -685,10 +685,12 @@ section.service .service-icon:hover{
             
         }
         section.dr-service .icon-service{
-             padding:2rem; 
-            border-radius: 2px;
-            height:200px;
+             
+            height:268px;
             width:100%;
+        }
+        .service .service-icon {
+            height:270px;
         }
         section.dr-service .icon-service i{
             font-size: 30px;
@@ -781,6 +783,9 @@ section.service .service-icon:hover{
           width: 100%;
           height: auto;
           flex:1 1 .2rem;
+        }
+        .service .service-icon {
+            height:270px;
         }
         .intro .content{
             height: auto;
