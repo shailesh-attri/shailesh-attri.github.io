@@ -644,6 +644,129 @@ section.service .service-icon:hover{
         text-shadow:var(--box-shadow);
         
     }
+    @media (max-width: 1050px) {
+        #menu-btn{
+         
+          display: block;
+      
+        }
+        html{
+          scroll-behavior: smooth;
+          width:100%
+      }
+        .intro img{
+          width: 100%;
+          height: auto;
+          flex:1 1 .2rem;
+        }
+        .intro .content{
+            height: auto;
+            font-size: 25px;
+        }
+        .intro .heading{
+            font-size:50px;
+        } .heading1{
+            font-size: 50px;
+            padding-bottom:2px;
+        }
+        header {
+          padding: 18px 4%;
+        }
+      
+        section {
+          padding: 6rem 7%;
+          width: 100%;
+        }
+        section .container{
+            display: grid;
+            gap:2rem;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 0.5fr));
+            
+        }
+        section.dr-service .icon-service{
+             padding:2rem; 
+            border-radius: 2px;
+            height:200px;
+            width:100%;
+        }
+        section.dr-service .icon-service i{
+            font-size: 30px;
+        }
+
+        .service .service-icon{
+            width:100%;
+        }
+
+        .hospital{
+            width: 100%;
+            }
+            .hospital .img img{
+                width: 100%;
+            }
+            .doctors .box{
+                width:100%;
+            }
+
+            .appointment .input-container {
+                width: 100%;
+                height: auto;
+            }
+            .links .logo2 {
+                    margin-bottom: -30px;
+            }
+
+
+            header .navbar {
+                position: absolute;
+                top:115%;
+                transform-origin: top right;
+                width: 250px;
+               font-size: 10px;
+               border-radius:20px ;
+               box-shadow: 1px 2px 10px 0px rgb(46, 82, 46);
+                background:#ffffff;
+                border: 1.5px solid ;
+                border-color: rgb(13, 124, 13);
+                right: 2rem;
+                transition: all 0.55s ease;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateX(150%);
+                
+    
+                transition: all 0.5s ease;
+              
+              
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            header .navbar .list {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            header .navbar .list li{
+                margin: 0;
+            }
+              
+              header .navbar a{
+                font-size: 1rem;
+            display: block;
+              }
+              header ul li a{
+                padding: 10px 0;
+              }
+              .header .navbar.active {
+                opacity: 1;
+                transform: translateX(0%);
+                visibility: visible;
+                transition: all cubic-bezier(0.86,0,0.07);
+              }
+        }
     @media (max-width: 991px) {
         #menu-btn{
          
@@ -715,55 +838,7 @@ section.service .service-icon:hover{
             .links .logo2 {
                     margin-bottom: -30px;
             }
-        header .navbar {
-            position: absolute;
-            top:115%;
-            transform-origin: top right;
-            width: 250px;
-           font-size: 10px;
-           border-radius:20px ;
-           box-shadow: 1px 2px 10px 0px rgb(46, 82, 46);
-            background:#ffffff;
-            border: 1.5px solid ;
-            border-color: rgb(13, 124, 13);
-            right: 2rem;
-            transition: all 0.55s ease;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateX(150%);
-            
-
-            transition: all 0.5s ease;
-          
-          
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
         
-        header .navbar .list {
-            display: grid;
-            align-items: center;
-            justify-content: center;
-            
-        }
-        header .navbar .list li{
-            margin: 0;
-        }
-          
-          header .navbar a{
-            font-size: 1rem;
-        display: block;
-          }
-          header ul li a{
-            padding: 10px 0;
-          }
-          .header .navbar.active {
-            opacity: 1;
-            transform: translateX(0%);
-            visibility: visible;
-            transition: all cubic-bezier(0.86,0,0.07);
-          }
           
     }
    
