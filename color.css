@@ -1,0 +1,159 @@
+
+   
+   .sidebar{
+    position: absolute;
+     right: 7%;
+     margin-top:7.5%;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     padding:15px 1rem;
+     
+     border-radius: 10px;
+     box-shadow: 2px 2px 10px 2px black;
+     height: 1rem;
+     opacity: 0;
+     border:1px solid var(--main);
+     visibility: hidden;
+     transform: translateY(-100%);
+     transition: all 0.3s ease-in-out;
+     /* animation: sidebar 1s  ease-in-out; */
+     
+     
+   }
+   .sidebar .color{
+     
+     padding:7px 7px;
+     cursor: pointer;
+     font-size: 5px;
+   
+   }
+   .active{
+     opacity: 1;
+     visibility: visible;
+     transform: translateY(0%);
+     transition: all 0.3s ease-in-out;
+   }
+   .navbar #circle.active{
+    animation: none;
+   }
+
+   
+  
+  
+ 
+  .red {
+    --main: red;
+    color: white;
+    
+  }
+  .blue {
+    --main: gold;
+    color: white;
+  }
+  .green {
+    --main: green;
+    color: white;
+  }
+  /* .violet {
+    --main:;
+    color: white;
+  }
+  */
+
+  
+  .sidebar .colors span.clr-1{
+    background-color: red;
+  }
+  .sidebar .colors span.clr-2{
+    background-color: gold;
+  }
+  .sidebar .colors span.clr-3{
+    background-color: green;
+  }
+
+  .sidebar ul{
+    
+    display:grid;
+    grid-template-columns:auto auto auto;
+    
+    column-gap: 10px;
+      
+  }
+   .sidebar span{
+    
+    border:1px solid black;
+    border-radius: 50%;
+  } 
+  .sidebar .colors span.active {
+    border: 2px solid black;
+  }
+  
+.defalut {
+  --main: orange;
+}
+
+.contact .contact-box{
+  
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: auto auto;
+  
+  
+  width:100%;
+  
+}
+.contact .contact-box .box{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 0rem;
+  align-items: center;
+}
+.contact .contact-box .form{
+  
+  box-shadow: 2px 2px 10px 2px black;
+    padding: 0rem;
+}
+
+form input, textarea, select{
+  
+    width: 100%;
+  padding:10px 0;
+  color: white;
+  
+  background-color: transparent;
+
+}
+.contact form {
+  display: grid;
+  grid-template-columns: auto auto ;
+  
+  box-shadow: 2px 2px 5px 2px black;
+  padding: 10px 10px;
+  row-gap:10px;
+  column-gap:10px;
+  border: 1px solid white;
+ 
+}
+.border{
+  border: 1px solid gray;
+  box-shadow: 0px 2px 5px 0px black;
+  padding:1rem;
+}
+.btn-contct{
+  width: 10vw;
+}
+.fa-linkedin{
+  word-break: wrap;
+}
+
+.contact .form input, textarea, select{
+  border: 1px solid gray;
+  padding:0 5px;
+  height:50px;
+}
+.button{
+  cursor: pointer;
+}
+
+

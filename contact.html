@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Dhaka</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="code.js"></script>
+  
+    <link rel="stylesheet" href="mycss.css" type="text/css">
+    <link rel="stylesheet" href="color.css" type="text/css">
+</head>
+<body>
+    <!-- Header part -->
+    
+    <header class="header" id="header" >
+        
+        <label for="" class="logo">
+            Port<span>Folio</span>
+        </label>
+        
+        <div class="navbar" id="navbar">
+            <ul class="list">
+                <li><a href="#" class="nav-link-fade-up animate">Home</a></li>
+                <li><a href="#about" class="nav-link-fade-up">About me</a></li>
+                <li><a href=".\index.html\#personal" class="nav-link-fade-up">Qualification</a></li>
+                <li><a href="#exp" class="nav-link-fade-up">Experience</a></li>
+                <li><a href="#" class="nav-link-fade-up">Contact</a></li>
+                <li ><div id="circle" class="fas fa-gear" onclick="toggleTheme()"></div></li>
+                  
+                </ul>
+                <!-- <div id="theme-toggle" class="fas fa-circle" onclick="toggleTheme()"></div> -->
+            </div>
+
+            <div id="menu-btn" class="fas fa-gear" onclick="toggleTheme()"></div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <ul class="colors">
+            <span onclick="red()" class="color clr-1 " ></span>
+            <span onclick="gold()" class="color clr-2 "></span>
+            <span onclick="green()" class="color clr-3 "></span>
+        </ul>
+        
+      </div>
+
+
+      <section class="contact" id="contact">
+        <h1 class="heading">Contact  <span>Me </span></h1>
+        <div class="contact-container">
+            <h2 class="h2">Have you any Question?</h2>
+            <h5>I'm at your service</h5>
+            <div class="contact-box ">
+                <div class="box">
+                    <div class="contact-item border">
+                       
+                      <h4><div class="contact-icon"><i class="fa fa-phone"></i></div> &nbsp;Call us on</h4> 
+                      <p>+91 9999756959</p>
+                    </div>
+                    <div class="contact-item border">
+                         
+                        <h4><div class="contact-icon"><i class="fa fa-building"></i></div>&nbsp;Office</h4> 
+                        <p>Noida</p>
+                      </div>
+                      <div class="contact-item border">
+                        
+                        <h4><div class="contact-icon"><i class="fa fa-envelope"></i></div> &nbsp;Email</h4> 
+                        <p>gdhaka91@gmail.com</p>
+                      </div>
+                      <div class="contact-item border">
+                           
+                          <h4><div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>&nbsp;Linked In</h4> 
+                        <p>linkedin.com/in/gaurav-dhaka/</p>
+                      </div>
+                </div>
+                <div class="form">
+                    <div class="form-box">
+                        <form action="">
+                            <input type="text" placeholder="Your Name" class="txt">
+                            <input type="date" placeholder="Your DOB" class="dob">
+                            <input type="email" placeholder="Your email address" class="email">
+                            <input type="text" placeholder="Your Ph. Number" class="txt">
+                            <select name="gender" id="" class="select">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <textarea  placeholder="Your comments" class="area"></textarea>
+                        </form>
+                       
+                    </div>
+                    <button class="btn btn-contct">Send</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
