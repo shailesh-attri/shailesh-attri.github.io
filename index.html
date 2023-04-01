@@ -11,31 +11,40 @@
   
     <link rel="stylesheet" href="mycss.css" type="text/css">
     <link rel="stylesheet" href="color.css" type="text/css">
+    <link rel="stylesheet" href="media.css" type="text/css">
+    <link rel="stylesheet" href="navbar.css" type="text/css">
+
 </head>
-<body>
+<body >
     <!-- Header part -->
     
-    <header class="header" id="header" >
+    <nav  class="header" id="header" >
         
         <label for="" class="logo">
             Port<span>Folio</span>
         </label>
+        <div id="menu-btn" class="fa-sharp fa-solid fa-bars ham-tog-btn" style="color: #ee5311;"  onclick="toggle_btn()"></div>
+        
         
         <div class="navbar" id="navbar">
             <ul class="list">
                 <li><a href="#" class="nav-link-fade-up animate">Home</a></li>
-                <li><a href="#about" class="nav-link-fade-up">About me</a></li>
+                <li><a href="#about" class="nav-link-fade-up">About </a></li>
                 <li><a href="#personal" class="nav-link-fade-up">Qualification</a></li>
                 <li><a href="#exp" class="nav-link-fade-up">Experience</a></li>
-                <li><a href=".\contact.html" class="nav-link-fade-up" target="blank">Contact</a></li>
+                <li><a href="#projects" class="nav-link-fade-up">Projects</a></li>
+                <li><a href="#contact" class="nav-link-fade-up">Contact</a></li>
                 <li ><div id="circle" class="fas fa-gear" onclick="toggleTheme()"></div></li>
                   
                 </ul>
-                <!-- <div id="theme-toggle" class="fas fa-circle" onclick="toggleTheme()"></div> -->
+         
             </div>
-
-            <div id="menu-btn" class="fas fa-gear" onclick="toggleTheme()"></div>
-    </header>
+            
+            
+            
+    </nav>
+    
+           
     <div class="sidebar" id="sidebar">
         <ul class="colors">
             <span onclick="red()" class="color clr-1 " ></span>
@@ -44,7 +53,28 @@
         </ul>
         
       </div>
-    
+      <div class="dropdown-menu">
+        
+        <div class="menu-content">
+           
+                <a href="#" class="nav-link-fade-up animate">Home</a>
+                <a href="#about" class="nav-link-fade-up">About</a>
+                <a href="#personal" class="nav-link-fade-up">Qualification</a>
+                <a href="#exp" class="nav-link-fade-up">Experience</a>
+                <a href="#projects" class="nav-link-fade-up">Projects</a>
+                <a href="#contact" class="nav-link-fade-up">Contact</a>
+        </div>
+        <div class="social">
+            <a href="#"><i class='fa-brands fa-instagram'></i></a>
+            <a href="#"><i class='fa-brands fa-twitter'></i></a>
+            <a href="#"><i class='fa-brands fa-facebook'></i></a>
+            <a href="#"><i class='fa-brands fa-linkedin'></i></a>
+            <a href="#"><i class='fa-brands fa-youtube'></i></a>
+            
+        </div>
+        
+    </div>
+
     <!-- Intro part -->
         <section class="home" id="home">
             
@@ -69,9 +99,9 @@
                         <img class="my-home-img" src="images/home-img2.png" alt="">
                     </span>
                 
-             </div>
+                 </div>
             </div>
-
+        </section>
 
             <!-- About me -->
             <section class="about-me" id="about">
@@ -203,25 +233,20 @@
         <h1 class="heading">My <span>Experience</span></h1>
         <div class="my-exp">
             
-            <div class="left">
-                <h3>NetCarrots Loyalty Services</h3>
-                <p class="p">Full Time - 3 yrs 4 mons</p>
-                </div>
+            
 
-            <div class="medium">
-                <h3>SOLVERE GLOBAL</h3>
-                <p class="p">Full Time - 3yrs 3mons</p>
-            </div>
+            
 
-            <div class="right">
-                <h3>CYIENT</h3>
-                <p class="p">On Site - 4 yrs 4 mons</p>
-            </div>
+            
 
 
 
                             <div class="box">
                                 <div class="circle">
+                                    <div class="left">
+                                        <h3>NetCarrots Loyalty Services</h3>
+                                        <p class="p">Full Time - 3 yrs 4 mons</p>
+                                        </div>
                                     <h4>Program Manager - Engagement Management</h4>
                                     <h5>Oct 2022 - Present · 6 mos</h5>
                                     <p>Design and manage communications strategy focused on 
@@ -277,6 +302,10 @@
             
                             <div class="box">
                                 <div class="circle">
+                                    <div class="medium">
+                                        <h3>SOLVERE GLOBAL</h3>
+                                        <p class="p">Full Time - 3yrs 3mons</p>
+                                    </div>
                                     <h4>Program Manager - Engagement Management</h4>
                                     <h5>Oct 2022 - Present · 6 mos</h5>
                                     <p>Design and manage communications strategy focused on 
@@ -361,68 +390,11 @@
         </div>
     </section>
     
-<!-- Projects -->
-
-    
-    
-    
-    
-    
-    <!-- Contact me -->
-    <!-- <section class="contact" id="contact">
-        <h1 class="heading">Contact  <span>Me </span></h1>
-        <div class="contact-container">
-            <h2 class="h2">Have you any Question?</h2>
-            <h5>I'm at your service</h5>
-            <div class="contact-box ">
-                <div class="box">
-                    <div class="contact-item border">
-                       
-                      <h4><div class="contact-icon"><i class="fa fa-phone"></i></div> &nbsp;Call us on</h4> 
-                      <p>+91 9999756959</p>
-                    </div>
-                    <div class="contact-item border">
-                         
-                        <h4><div class="contact-icon"><i class="fa fa-building"></i></div>&nbsp;Office</h4> 
-                        <p>Noida</p>
-                      </div>
-                      <div class="contact-item border">
-                        
-                        <h4><div class="contact-icon"><i class="fa fa-envelope"></i></div> &nbsp;Email</h4> 
-                        <p>gdhaka91@gmail.com</p>
-                      </div>
-                      <div class="contact-item border">
-                           
-                          <h4><div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>&nbsp;Linked In</h4> 
-                        <p>linkedin.com/in/gaurav-dhaka/</p>
-                      </div>
-                </div>
-                <div class="form">
-                    <div class="form-box">
-                        <form action="">
-                            <input type="text" placeholder="Your Name" class="txt">
-                            <input type="date" placeholder="Your DOB" class="dob">
-                            <input type="email" placeholder="Your email address" class="email">
-                            <input type="text" placeholder="Your Ph. Number" class="txt">
-                            <select name="gender" id="" class="select">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                            <textarea  placeholder="Your comments" class="area"></textarea>
-                        </form>
-                       
-                    </div>
-                    <button class="btn btn-contct">Send</button>
-                </div>
-            </div>
-            
-        </div>
-    </section> -->
 
 
 
     <!-- ---------Projects -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <h1 class="heading">My  <span>Projects </span></h1>
         <div class="projects-container">
 
@@ -493,4 +465,157 @@
 
         </div>
     </section>
+
+
+    <!-- ---------awards -->
+    <section class="awards">
+        <h1 class="heading"><span>Awards</span> & <span>Honours</span></h1>
+        <div class="awards-container">
+
+            
+                 
+                <div class="box">
+                    <div class="my-award">
+                        <h4>
+                            Outshining Star</h4>
+                        <h5>
+                            Issued by Netcarrots.com Pvt Ltd · Jun 2022</h5>
+                            <p></p>
+                    </div>
+                    
+                    <div class="company">
+                        <h3>Association with</h3>
+                        <p>NetCarrots Loyalty Services</p>
+                    </div>
+                </div>
+                   <div class="box">
+                    <div class="my-award">
+                        <h4>
+                            
+                            Tech Expert</h4>
+                        <h5>
+                            Issued by Sanjeev Jain · Nov 2019</h5>
+                            <p>Cost Effective Process Mapping and Process Automation with Innovative System Developments</p>
+                    </div>
+                    
+                    <div class="company">
+                        <h3>Association with</h3>
+                        <p>Artec Builders</p>
+                    </div>
+                   </div>
+                   <div class="box">
+                    <div class="my-award">
+                        <h4>
+                            
+Distinguished Contributor</h4>
+                        <h5>
+                            Issued by Cyient Ltd · Aug 2017</h5>
+                            <p>Autonomous Driving Projects</p>
+                    </div>
+                    
+                    <div class="company">
+                        <h3>Association with</h3>
+                        <p>Cyient</p>
+                    </div>
+                   </div>
+                
+        </div>
+    </section>  
+
+    <!-- Projects -->
+
+    
+    
+    
+    
+    
+    <!-- Contact me -->
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact  <span>Me </span></h1>
+        <div class="contact-container">
+            <h2 class="h2">Have you any Question?</h2>
+            <h5>I'm at your service</h5>
+            <div class="contact-box ">
+                <div class="box">
+                    <div class="contact-item border">
+                       
+                      <h4><div class="contact-icon"><i class="fa fa-phone"></i></div> &nbsp;Call us on</h4> 
+                      <p>+91 9999756959</p>
+                    </div>
+                    <div class="contact-item border">
+                         
+                        <h4><div class="contact-icon"><i class="fa fa-building"></i></div>&nbsp;Office</h4> 
+                        <p>Noida</p>
+                      </div>
+                      <div class="contact-item border">
+                        
+                        <h4><div class="contact-icon"><i class="fa fa-envelope"></i></div> &nbsp;Email</h4> 
+                        <p>gdhaka91@gmail.com</p>
+                      </div>
+                      <div class="contact-item border">
+                           
+                          <h4><div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>&nbsp;Linked In</h4> 
+                        <p>linkedin.com/in/gaurav-dhaka/</p>
+                      </div>
+                </div>
+                <div class="form">
+                    <div class="form-box">
+                        <form action="">
+                            <input type="text" placeholder="Your Name" class="txt">
+                            <input type="date" placeholder="Your DOB" class="dob">
+                            <input type="email" placeholder="Your email address" class="email">
+                            <input type="text" placeholder="Your Ph. Number" class="txt">
+                            <select name="gender" id="" class="select">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <textarea  placeholder="Your comments" class="area"></textarea>
+                        </form>
+                       
+                    </div>
+                    <button class="btn btn-contct">Send</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="left">
+                <div class="footer-nav" id="navbar">
+                    <ul class="list">
+                        <li><a href="#" class="nav-link-fade-up animate"><i class="fas fa-chevron-right"></i>Home</a></li>
+                        <li><a href="#about" class="nav-link-fade-up"><i class="fas fa-chevron-right"></i>About me</a></li>
+                        <li><a href="#personal" class="nav-link-fade-up"><i class="fas fa-chevron-right"></i>Qualification</a></li>
+                        <li><a href="#exp" class="nav-link-fade-up"><i class="fas fa-chevron-right"></i>Experience</a></li>
+                        <li><a href=".\contact.html" class="nav-link-fade-up" target="blank"><i class="fas fa-chevron-right"></i>Contact</a></li>                                                  
+                    </ul>
+                </div>
+            </div>
+                <div class="right">
+                   
+                        <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+            <a href="#"> <i class="fab fa-youtube"></i> pinterest </a>                    
+                    
+                </div>
+                
+        </div>
+       
+        
+    </section>
+    
+    <footer class="copyright">
+        <div class="tagline">
+            <h3>Created by Shailesh Attri | All Rights reserved. </h3>
+        </div>
+        
+    </footer>
     
