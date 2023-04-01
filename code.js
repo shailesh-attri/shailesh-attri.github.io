@@ -18,6 +18,19 @@ window.addEventListener('scroll', function() {
     
     
   }
+window.addEventListener('scroll', function(){
+  var slide = document.querySelector('.dropdown-menu');
+  var s_pos = slide.getBoundingClientRect().top;
+  var screenPos = window.innerHeight/2
+  if(s_pos<screenPosition){
+    slide.classList.add('hidden');
+  }
+})
+
+
+
+
+
   function toggle_btn(){
     const navList = document.querySelector('.dropdown-menu');
     const menuBtn = document.querySelector('#menu-btn');
@@ -26,53 +39,18 @@ window.addEventListener('scroll', function() {
     menuBtn.classList.toggle('fa-bars');
     
     navList.classList.toggle('active');
-    if (window.scrollY < 0) {
     
-      navbar.classList.remove('active');
-    }
     
     
   }
-  const hamburgerBtn = document.getElementById('menu-btn');
-const homeImg = document.querySelector('.my-home-img');
-
-hamburgerBtn.addEventListener('click', () => {
-  homeImg.classList.toggle('active');
-  alert("hello");
-});
-// function toggleTheme(){
-//   alert('hello');
-//   const Tog_div=document.querySelector('.tog_btn');  
-// const toggle=document.querySelector('.dropdown-menu');
-// const toggle_btn=document.querySelector('#menu-btn');
-
-// toggle.classList.toggle('open');
-// toggle_btn.classList.toggle('.fa-bars')
-// toggle_btn.classList.toggle('.fa-times')
-
-
-// }
+  
 
 
 
-//   const alt_style=document.querySelectorAll('.alternate-style');
-
-// function setActiveStyle(color){
-//   alt_style.forEach((style) => {
-//     if (color === style.getAttribute('title')){
-//       style.removeAttribute('disabled');
-//     } else {
-//       style.setAttribute('disabled', 'true');
-//     }
-//   })
-// }
 
 
 
-toggleButton.addEventListener("click", function() {
-  sidebar.classList.toggle("open");
-  alert("hello");
-});
+
 
 function red() {
   const body = document.querySelector('body');

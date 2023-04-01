@@ -41,7 +41,7 @@ body{
      /* background:  rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,50,51,1) 35%, rgba(0,212,255,1) 100% );
     background: linear-gradient(to right, #040404, #242424, #656565); */
-    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/anim.jpg);
+    background: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95)), url(images/anim.jpg);
     background-size: cover;
     background-position: fixed;
     background-attachment: fixed;
