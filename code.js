@@ -26,6 +26,10 @@ window.addEventListener('scroll', function() {
     menuBtn.classList.toggle('fa-bars');
     
     navList.classList.toggle('active');
+    if (window.scrollY < 0) {
+    
+      navbar.classList.remove('active');
+    }
     
     
   }
