@@ -1,11 +1,21 @@
 window.addEventListener('scroll', function() {
     var navbar = document.getElementById('header');
+    var folio = document.querySelector('.folio');
+    
     if (window.scrollY > 0) {
       navbar.classList.add('scrolled');
+      folio.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
+      folio.classList.remove('scrolled');
     }
   });
+
+
+
+
+
+  
 
   function toggleTheme(){
     const navList = document.querySelector('.sidebar');
