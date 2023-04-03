@@ -82,9 +82,10 @@ body,html{
     row-gap:1rem;
   }
   .projects .projects-container {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     column-gap: 2rem;
-    row-gap: 1rem;
+    row-gap: 6rem;
+    width: 100%;
   }
   .projects-container .box {
     grid-template-columns: 100%;
@@ -321,7 +322,12 @@ body,html{
       padding: 20px 4rem;
       padding-bottom: 10px;
   }
-    .personal .container{
+    .personal .personal-info{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .experience .my-exp{
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -329,6 +335,18 @@ body,html{
     .contact-container .contact-box .box {
         grid-template-columns: 100%;
         width: 100%;
+    }
+    .heading{
+      font-size: 20px;
+      margin-left:3rem;
+    }
+    nav label.logo{
+      margin-left:1rem;
+    }
+    .projects .projects-container {
+      
+      row-gap: 6rem;
+     
     }
     
     
