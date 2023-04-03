@@ -1,18 +1,35 @@
+
+
 window.addEventListener('scroll', function() {
     var navbar = document.getElementById('header');
     var folio = document.querySelector('.folio');
     
+    
     if (window.scrollY > 0) {
       navbar.classList.add('scrolled');
       folio.classList.add('scrolled');
+      
     } else {
+      
       navbar.classList.remove('scrolled');
       folio.classList.remove('scrolled');
+      
     }
   });
 
-
-
+  window.addEventListener('scroll', function() {
+   
+    var DownButton = document.querySelector('.scroll-to-down');
+    var TopButton = document.querySelector('.scroll-to-top');
+    if (window.scrollY > 100) {
+    TopButton.style.display='block'
+    
+    } else {
+      TopButton.style.display='none'
+      
+    }
+   
+  });
 
 
   
@@ -28,14 +45,14 @@ window.addEventListener('scroll', function() {
     
     
   }
-window.addEventListener('scroll', function(){
-  var slide = document.querySelector('.dropdown-menu');
-  var s_pos = slide.getBoundingClientRect().top;
-  var screenPos = window.innerHeight/2
-  if(s_pos<screenPosition){
-    slide.classList.add('hidden');
-  }
-})
+// window.addEventListener('scroll', function(){
+//   var slide = document.querySelector('.dropdown-menu');
+//   var s_pos = slide.getBoundingClientRect().top;
+//   var screenPos = window.innerHeight/2
+//   if(s_pos<screenPosition){
+//     slide.classList.add('hidden');
+//   }
+// })
 
 
 
@@ -137,21 +154,50 @@ document.addEventListener("DOMContentLoaded", function () {
 let my_button = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    my_button.style.display = "block";
-  } else {
-    my_button.style.display = "none";
-  }
-}
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+// function topFunction() {
+//   document.body.scrollTop = 0; // For Safari
+//  // For Chrome, Firefox, IE and Opera
+//   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+//     scrollToTopButton.style.display = "block";
+//   } else {
+//     scrollToTopButton.style.display = "none";
+//   }
+// }
+
+
+
+// Detect when the user has scrolled down 20 pixels from the top of the page
+
+
+
+function scrollFunction() {
+  
+
+  // Get a reference to the "scroll-to-top" button
+  
+  window.scrollTo(0,0)
 }
+
+
+
+
+
+// window.addEventListener("scroll", checkHeight)
+
+//   function checkHeight() {
+//   if (window.scrollY > 200) {
+//     scrollToTopButton.style.display = "block";
+//   } else {
+//     scrollToTopButton.style.display = "none";
+//   }
+// }
+
+
+
+
 
 
 
