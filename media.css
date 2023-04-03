@@ -100,9 +100,7 @@ body,html{
    .wrapper h3{
     padding:1rem;
    }
-   .contact form {
-     
-}
+   
 .btn-contct {
   width: 23vw;
   font-size: 16px;
@@ -152,6 +150,8 @@ body,html{
     color: black;
     font-size:20px;
     padding:0 2rem;
+    font-family: 'Gumela';
+    font-weight: bold;;
     transition: all 0.3s ease-in-out;
   }
   .dropdown-menu a:hover{
@@ -207,6 +207,16 @@ body,html{
   @media (max-width:780px){
     .dropdown-menu {
       display: none;
+    }
+    .awards-container {
+  
+      display: grid;
+      grid-template-columns: 100%;
+      column-gap: 3rem;
+      row-gap: 3rem;
+      padding:20px;
+      
+      
     }
 @media (max-width:760px){
   .dropdown-menu {
@@ -335,6 +345,10 @@ body,html{
     .contact-container .contact-box .box {
         grid-template-columns: 100%;
         width: 100%;
+    }
+    
+    .contact .form .box {
+     padding: 0px 0px;
     }
     .heading{
       font-size: 20px;

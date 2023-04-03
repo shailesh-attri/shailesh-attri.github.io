@@ -17,9 +17,15 @@ window.addEventListener('scroll', function() {
     }
   });
 
+
+
+
+
+
+
   window.addEventListener('scroll', function() {
    
-    var DownButton = document.querySelector('.scroll-to-down');
+    
     var TopButton = document.querySelector('.scroll-to-top');
     if (window.scrollY > 100) {
     TopButton.style.display='block'
@@ -32,27 +38,22 @@ window.addEventListener('scroll', function() {
   });
 
 
-  
 
-  function toggleTheme(){
-    const navList = document.querySelector('.sidebar');
+
+  window.addEventListener('scroll', function() {
+  var HamBtn = document.querySelector('.dropdown-menu')
+  if (window.scrollY > 100) {
     
+    HamBtn.style.display='none'
+    } else {
+      HamBtn.style.display='block'
+      
+    }
    
-    // menuBtn.classList.toggle('fa-times');
-    // menuBtn.classList.toggle('fa-bars');
-    
-    navList.classList.toggle('active');
-    
-    
-  }
-// window.addEventListener('scroll', function(){
-//   var slide = document.querySelector('.dropdown-menu');
-//   var s_pos = slide.getBoundingClientRect().top;
-//   var screenPos = window.innerHeight/2
-//   if(s_pos<screenPosition){
-//     slide.classList.add('hidden');
-//   }
-// })
+  });
+
+
+
 
 
 
@@ -67,8 +68,6 @@ window.addEventListener('scroll', function() {
     
     navList.classList.toggle('active');
     
-    
-    
   }
   
 
@@ -77,11 +76,11 @@ window.addEventListener('scroll', function() {
 
 
 
-
+// -----------------------------------------------
 
 function red() {
   const body = document.querySelector('body');
-  // body.classList.add('defalut')
+ 
   if(body.classList.contains('blue') || body.classList.contains('green')){
     body.classList.remove('blue')
     body.classList.remove('green')
@@ -91,10 +90,12 @@ function red() {
   
 }
 
+
+
+// ---------
 function gold() {
   const body = document.querySelector('body');
-  // const button = document.querySelector('clr-2');
-  // body.classList.add('defalut')
+  
 
   if(body.classList.contains('red') || body.classList.contains('green')){
     body.classList.remove('red')
@@ -102,19 +103,31 @@ function gold() {
 
   }
   body.classList.toggle('blue');
-  // button.classList.toggle('active');
+
 }
+
+
+
+// -------------
 function green() {
   const body = document.querySelector('body');
-  // const button = document.querySelector('clr-3');
+ 
   if(body.classList.contains('red') || body.classList.contains('blue')){
     body.classList.remove('red')
     body.classList.remove('blue')
 
   }
   body.classList.toggle('green');
-  // button.classList.toggle('active');
+ 
 }
+
+
+
+
+
+
+
+
 const input = document.querySelector('txt');
 const select = document.querySelector('select');
 const textarea = document.querySelector('area');
@@ -137,6 +150,13 @@ textarea.addEventListener('focus', function() {
 });
 
 
+
+
+
+
+
+
+
 function showLoader() {
   document.getElementById("loader").style.display = "block";
   // Add other loading actions here if needed
@@ -151,49 +171,43 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-let my_button = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-
-
-// When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0; // For Safari
-//  // For Chrome, Firefox, IE and Opera
-//   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-//     scrollToTopButton.style.display = "block";
-//   } else {
-//     scrollToTopButton.style.display = "none";
-//   }
-// }
 
 
 
-// Detect when the user has scrolled down 20 pixels from the top of the page
+
+
+
+
+
 
 
 
 function scrollFunction() {
   
-
-  // Get a reference to the "scroll-to-top" button
-  
   window.scrollTo(0,0)
 }
 
 
+// ---------------Send Mail----------------//
 
-
-
-// window.addEventListener("scroll", checkHeight)
-
-//   function checkHeight() {
-//   if (window.scrollY > 200) {
-//     scrollToTopButton.style.display = "block";
-//   } else {
-//     scrollToTopButton.style.display = "none";
-//   }
-// }
+var my_btn = document.createElementById("mail-btn");
+function _mail_btn(){
+ 
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "shaileshattri83@gmail.com",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+  
+}
+  
+ 
 
 
 

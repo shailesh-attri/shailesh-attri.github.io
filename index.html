@@ -7,12 +7,20 @@
     <title>Gaurav Dhaka</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="code.js"></script>
   
     <link rel="stylesheet" href="mycss.css" type="text/css">
     <link rel="stylesheet" href="color.css" type="text/css">
     <link rel="stylesheet" href="media.css" type="text/css">
     <link rel="stylesheet" href="navbar.css" type="text/css">
+
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 
 </head>
 <body >
@@ -44,7 +52,7 @@
             
     </nav>
     <div class="scroll-to-top" onclick="scrollFunction()"><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
-    <div class="scroll-to-top" onclick="scrollFunction()"><i class="fa-sharp fa-solid fa-arrow-down"></i></div>
+    
            
     <div class="sidebar" id="sidebar">
         <ul class="colors">
@@ -93,7 +101,7 @@
                             <a href="#"><i class='fa-brands fa-youtube'></i></a>
                             
                         </div>
-                    <a href="#contact" class="btn" onclick="mycv()">Download CV</a>
+                    <a href="" class="btn" >Download CV</a>
                 </div>
                  <div class="home-img  align-item">
                     <span>
@@ -121,7 +129,7 @@
                             
                             Highly appreciated for the discipline, work and dedication with a zeal to achieve the best out of Life.</p>
                             <div class="btn2 text-align">
-                                <a href="" type="button" class="btn1 ">Hire 
+                                <a href="#contact" type="button" class="btn1 ">Hire 
                                     me</a>
                             </div>
                         
@@ -451,7 +459,7 @@
                             Tech Expert</h4>
                         <h5>
                             Issued by Sanjeev Jain · Nov 2019</h5>
-                            <p>Cost Effective Process Mapping and Process Automation with Innovative System Developments</p>
+                            
                     </div>
                     
                     <div class="company">
@@ -466,7 +474,7 @@
 Distinguished Contributor</h4>
                         <h5>
                             Issued by Cyient Ltd · Aug 2017</h5>
-                            <p>Autonomous Driving Projects</p>
+                           
                     </div>
                     
                     <div class="company">
@@ -493,43 +501,49 @@ Distinguished Contributor</h4>
             <h5>I'm at your service</h5>
             <div class="contact-box ">
                 <div class="box">
-                    <div class="contact-item border">
+                    <div class="contact-item ">
                        
-                      <h4><div class="contact-icon"><i class="fa fa-phone"></i></div> &nbsp;Call us on</h4> 
+                      <h4><div class="contact-icon"><i class="fa fa-phone"></i></div> 
+                        &nbsp;Call us on</h4> 
                       <p>+91 9999756959</p>
                     </div>
-                    <div class="contact-item border">
+                    <div class="contact-item ">
                          
-                        <h4><div class="contact-icon"><i class="fa fa-building"></i></div>&nbsp;Office</h4> 
+                        <h4><div class="contact-icon"><i class="fa fa-building"></i>
+                        </div>&nbsp;Office</h4> 
                         <p>Noida</p>
                       </div>
-                      <div class="contact-item border">
+                      <div class="contact-item ">
                         
-                        <h4><div class="contact-icon"><i class="fa fa-envelope"></i></div> &nbsp;Email</h4> 
+                        <h4><div class="contact-icon"><i class="fa fa-envelope"></i></div> 
+                            &nbsp;Email</h4> 
                         <p>gdhaka91@gmail.com</p>
                       </div>
-                      <div class="contact-item border">
+                      <div class="contact-item ">
                            
-                          <h4><div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>&nbsp;Linked In</h4> 
+                          <h4><div class="contact-icon"><i class="fa-brands fa-linkedin">
+
+                          </i></div>&nbsp;Linked In</h4> 
                         <p>linkedin.com/in/gaurav-dhaka/</p>
                       </div>
                 </div>
                 <div class="form">
-                    <div class="form-box">
-                        <form action="">
-                            <input type="text" placeholder="Your Name" class="txt">
-                            <input type="date" placeholder="Your DOB" class="dob">
-                            <input type="email" placeholder="Your email address" class="email">
-                            <input type="text" placeholder="Your Ph. Number" class="txt">
-                            <select name="gender" id="" class="select">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                            <textarea  placeholder="Your comments" class="area"></textarea>
+                    <div class="box">
+                        <form  onsubmit="sendmail(); reset(); return false;" method="post">
+                            <input type="text" placeholder="Your Name" id="name" 
+                            class="txt">
+                            
+                            <input type="email" placeholder="Your email address" 
+                            class="email" id="email" >
+                            
+                            
+                            <textarea  placeholder="Your Message" class="area" id="message">
+
+                            </textarea>
                         </form>
                        
                     </div>
-                    <button class="btn btn-contct">Send</button>
+                    <button id="mail-btn" class="btn btn-contct" onclick="_mail_btn()">Send</button>
                 </div>
             </div>
             
@@ -567,6 +581,14 @@ Distinguished Contributor</h4>
        
         
     </section>
+
+   
+         
+
+
+
+
+
     
     <footer class="copyright">
         <div class="tagline">
