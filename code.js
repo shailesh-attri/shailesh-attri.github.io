@@ -192,17 +192,26 @@ function scrollFunction() {
 
 var my_btn = document.createElementById("mail-btn");
 function _mail_btn(){
- 
+ var name = document.getElementById("name").value;
+ var email = document.getElementById("email").value;
+ var msg = document.getElementById("message").value;
+var body =  'Name: ' +name + '<br/>' 
+            'Email: ' + email + '<br/>'
+            'Message: ' + msg + '<br/>'
+
+
+
   Email.send({
-    Host : "smtp.gmail.com",
-    Username : "shaileshattri83@gmail.com",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Host : "smtp.elasticemail.com",
+    Username : "bittuattri786@gmail.com",
+    Password : "F55559C21C5EEFFB2DA7905DF0E778F7161F",
+    
+    To : 'bittuattri786@gmail.com',
+    From : email,
+    Subject : "You have a contact Enquiry",
+    Body : body
 }).then(
-  message => alert(message)
+  message => alert('You information has been sent to Gaurav Dhaka, Thank you ')
 );
   
 }
