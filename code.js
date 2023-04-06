@@ -40,17 +40,7 @@ window.addEventListener('scroll', function() {
 
 
 
-  window.addEventListener('scroll', function() {
-  var HamBtn = document.querySelector('.dropdown-menu')
-  if (window.scrollY > 100) {
-    
-    HamBtn.style.display='none'
-    } else {
-      HamBtn.style.display='block'
-      
-    }
-   
-  });
+ 
 
 
 
@@ -70,15 +60,7 @@ window.addEventListener('scroll', function() {
     
   }
   
-  function toggleTheme(){
-    const navList = document.querySelector('.sidebar');
-    const menuBtn = document.querySelector('#circle');
-   
-    
-    
-    navList.classList.toggle('active');
-    
-  }
+  
 
 
 
@@ -86,98 +68,11 @@ window.addEventListener('scroll', function() {
 
 // -----------------------------------------------
 
-function red() {
-  const body = document.querySelector('body');
- 
-  if(body.classList.contains('blue') || body.classList.contains('green')){
-    body.classList.remove('blue')
-    body.classList.remove('green')
-
-  }
-  body.classList.toggle('red');
-  
-}
-
-
-
-// ---------
-function gold() {
-  const body = document.querySelector('body');
-  
-
-  if(body.classList.contains('red') || body.classList.contains('green')){
-    body.classList.remove('red')
-    body.classList.remove('green')
-
-  }
-  body.classList.toggle('blue');
-
-}
-
-
-
-// -------------
-function green() {
-  const body = document.querySelector('body');
- 
-  if(body.classList.contains('red') || body.classList.contains('blue')){
-    body.classList.remove('red')
-    body.classList.remove('blue')
-
-  }
-  body.classList.toggle('green');
- 
-}
 
 
 
 
 
-
-
-
-const input = document.querySelector('txt');
-const select = document.querySelector('select');
-const textarea = document.querySelector('area');
-const dob = document.querySelector('dob');
-
-input.addEventListener('focus', function() {
-  this.style.borderColor = 'red';
-  
-});
-
-select.addEventListener('focus', function() {
-  this.style.borderColor = 'red';
-  
-});
-
-
-textarea.addEventListener('focus', function() {
-  this.style.borderColor = 'red';
-  
-});
-
-
-
-
-
-
-
-
-
-function showLoader() {
-  document.getElementById("loader").style.display = "block";
-  // Add other loading actions here if needed
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("loader").style.display = "none";
-  // Add other actions after loading here if needed
-
-  window.onload = function() {
-    document.getElementById("loader").style.display = "none";
-  }
-});
 
 
 

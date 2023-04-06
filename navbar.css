@@ -45,25 +45,11 @@ nav{
     background-color: var(--main);
     box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
   }
-  nav ul li #circle{
-    color: var(--main);
-    cursor: pointer;
-    font-size: 20px;
-    margin-left:1rem;
-    margin-right:2rem;
-    animation: spin 2s linear infinite;
-  }
+ 
   
  
   
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+ 
   
   nav div.ham-tog-btn{
     float: right;
