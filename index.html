@@ -4,589 +4,292 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaurav Dhaka</title>
-    
+    <title>Galgotia's Hospital</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="code.js"></script>
-  
-    <link rel="stylesheet" href="mycss.css" type="text/css">
-    <link rel="stylesheet" href="color.css" type="text/css">
-    <link rel="stylesheet" href="media.css" type="text/css">
-    <link rel="stylesheet" href="navbar.css" type="text/css">
-
-
-    <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-
+    <script src="script.js"></script>
 </head>
-<body >
-    <!-- Header part -->
+<body>
     
-    <nav  class="header" id="header" >
+    <header class="header" id="header" >
         
         <label for="" class="logo">
-            Port<span class="folio">Folio</span>
+            <i class="fas fa-heartbeat"> </i>Galgotias Hospital
         </label>
-        <div id="menu-btn" class="fa-sharp fa-solid fa-bars ham-tog-btn"   onclick="toggle_btn()"></div>
-        
         
         <div class="navbar" id="navbar">
             <ul class="list">
-                <li><a href="#" class="nav-link-fade-up animate">Home</a></li>
-                <li><a href="#about" class="nav-link-fade-up">About </a></li>
-                <li><a href="#personal" class="nav-link-fade-up">Qualification</a></li>
-                <li><a href="#exp" class="nav-link-fade-up">Experience</a></li>
-                <li><a href="#projects" class="nav-link-fade-up">Projects</a></li>
-                <li><a href="#contact" class="nav-link-fade-up">Contact</a></li>
+                <li><a href="#" class="nav-link-fade-up">Home</a></li>
+                <li><a href="#avail" class="nav-link-fade-up">Availability</a></li>
+                <li><a href="#service" class="nav-link-fade-up">Service</a></li>
+                <li><a href="#hospital" class="nav-link-fade-up">About us</a></li>
                 
-                  
+                <li><a href="#doctors" class="nav-link-fade-up">Doctors</a></li>
+                <li><a href="#appointment" class="nav-link-fade-up">Appointment</a></li>
+                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li>
+                    
                 </ul>
-         
             </div>
+            <div id="menu-btn" class="fas fa-bars" onclick="toggleNav()"></div>
             
-            
-            
-    </nav>
-    <div class="scroll-to-top" onclick="scrollFunction()"><i class="fa-sharp fa-solid fa-arrow-up"></i></div>
+    </header>
     
-           
-    
-      <div class="dropdown-menu">
-        
-        <div class="menu-content">
-           
-                <a href="#" class="nav-link-fade-up animate">Home</a>
-                <a href="#about" class="nav-link-fade-up">About</a>
-                <a href="#personal" class="nav-link-fade-up">Qualification</a>
-                <a href="#exp" class="nav-link-fade-up">Experience</a>
-                <a href="#projects" class="nav-link-fade-up">Projects</a>
-                <a href="#contact" class="nav-link-fade-up">Contact</a>
+    <!--               -->
+    <!--               -->
+    <section class="intro" id="home" >
+        <div class="img">
+            <img src="image/home-img.svg" alt="">
         </div>
-        <div class="social">
-            <a href="https://instagram.com/the_optimystique_marketeer?igshid=ZDdkNTZiNTM="><i class='fa-brands fa-instagram'></i></a>
-            <a href="https://www.facebook.com/gdhaka91?mibextid=ZbWKwL"><i class='fa-brands fa-facebook'></i></a>
-            <a href="https://www.linkedin.com/in/gaurav-dhaka"><i class='fa-brands fa-linkedin'></i></a>
-            <a href="https://youtube.com/@TheOpti_MystiqueMarketeer"><i class='fa-brands fa-youtube'></i></a>
-            
-        </div>
-        
-    </div>
-
-    <!-- Intro part -->
-        <section class="home" id="home">
-            
-            <div class="container1 align-item  text-align">
-                <div class="home-text  align-item .home-section">
-                    <h3>Hello, I'm</h3>
-                    <h1>Gaurav <span>Dhaka</span></h1>
-                    <h2>The Opti_Mytique Marketeer</h2>
-                    <p>Head - Gamified Engagement, Marketing Campaigns & Contests | Loyalty | CRM | Channels + Influencers | Martech | Strategy | 7K+ LinkedIn Family</p>
-                        <div class="social">
-                            <a href="https://instagram.com/the_optimystique_marketeer?igshid=ZDdkNTZiNTM="><i class='fa-brands fa-instagram'></i></a>
-            <a href="https://www.facebook.com/gdhaka91?mibextid=ZbWKwL"><i class='fa-brands fa-facebook'></i></a>
-            <a href="https://www.linkedin.com/in/gaurav-dhaka"><i class='fa-brands fa-linkedin'></i></a>
-            <a href="https://youtube.com/@TheOpti_MystiqueMarketeer"><i class='fa-brands fa-youtube'></i></a>
-                            
-                        </div>
-                    <a href="" class="btn" >Download CV</a>
-                </div>
-                 <div class="home-img  align-item">
-                    <span>
-                        <img class="my-home-img" src="images/cool2.png" alt="">
-                    </span>
-                
-                 </div>
-            </div>
-        </section>
-
-            <!-- About me -->
-            <section class="about-me" id="about">
-                <h1 class="heading">About <span class="">me</span></h1>
-                <div class="container space-between align-item">
-                    <div class="left">
-                        <img src="images/img1.png" alt="">
-                    </div>
-                    <div class="right align-item">
-                        <h3>Hello My name is <span class="h3">Gaurav Dhaka</span> </h3>
-                        <p>Gained 10 years experience with an entrepreneurial spirit throughout.
-
-                            Currently, working with a well known Loyalty Marketing firm <span>(Netcarrots)</span> for 3 years now and honoured to be part of a team working towards building the new brand Solvere-Global as one stop Martech solutions organization while managing a portfolio of multiple accounts for the Organization. Responsible for Rapport building, Customer success, Quality and Efficacy of delivables as per agreed SLAs and yearly renewals. Awarded as Outshining Star for showing an exuberant attitude towards learning, taking on new responsibilities, customer satisfaction and servicing. <br>Having expertise with process mapping and automations..<br><br>
-                            
-                            Also, worked in the Data networks & Operations department at a CMMI Level 5 company (Cyient Ltd.) for 4.3 yrs. Having good ITIL, Six Sigma and PMP knowledge. Awarded as Distinguished Contributor in Autonomous Driving GPS Navigation Projects for TomTom.
-                            
-                            Highly appreciated for the discipline, work and dedication with a zeal to achieve the best out of Life.</p>
-                            <div class="btn2 text-align">
-                                <a href="#contact" type="button" class="btn1 ">Hire 
-                                    me</a>
-                            </div>
-                        
-                    </div>
-                </div>
-                
-                
-            </section>
-           
-         
-
-    <section class="personal" id="personal">
-        
-            <h1 class="heading"><span>Qualification </span> & <span>Skills </span></h1></h1>
-            
-            
-                
-                
-                <div class="personal-info">
-                    <div class="box" id="box1">
-                        <div class="dob">
-                            <i class="fa-sharp fa-solid fa-user-secret"></i>
-                            <h2>Personal</h2>
-                            <p> <span><i class="fa-solid fa-cake-candles"></i> &nbsp; 
-                                Birthday :
-                            </span>24 April 1995</p>
-                        </div>
-                        <div class="dob">
-                            <p><span><i class="fa-solid fa-envelope"></i></i> &nbsp;Email:
-                            </span> gdhaka91@gmail.com</p>
-                        </div>
-                        <div class="dob">
-                            <p><span><i class="fa-solid fa-mobile-screen"></i> &nbsp;Mobile 
-                                :</span> 9999756959</p>
-                        </div>
-                    </div>
-                    <div class="box" id="box2">
-                        <div class="dob">
-                            <i class="fa-solid fa-user-graduate"></i>
-                            <h2>Eduaction</h2>
-                            <p><span><i class="fa-solid fa-graduation-cap"></i> &nbsp; Graduation:</span> B.Sc-IT :Kuvempu University, Shankaraghatta, Shimoga logo
-                                </p>
-                        </div>
-                        <div class="dob">
-                            <p><span><i class="fa-solid fa-graduation-cap"></i> &nbsp;Mobile 
-                                :</span> MBA, Finance, General :Symbiosis Centre for Distance Learning
-                                </p>
-                        </div>
-                        <div class="dob">
-                            <p><span><i class="fa-solid fa-graduation-cap"></i> &nbsp;NIIT Delhi 
-                                :</span> Computer Software Engineering</p>
-                        </div>
-                    </div>           
-                </div>
-
-                <div class="tech-skills">
-                    <div class="tech-container">
-                        <div class="fa-chart"><i class="fa-sharp fa-solid fa-chart-simple"></i></div>
-                        <h2>Skills</h2>
-
-                    
-                        
-                             <div class="progress">
-                                <h3>
-                                    Business Analysis</h3>
-                                
-                                <div class="light-bar"></div>
-                                <div class="percent-bar html"></div>
-                            </div>
-                            <div class="progress">
-                                <h3>
-                                    Marketing Strategy</h3>
-                                
-                                <div class="light-bar"></div>
-                                <div class="percent-bar javascript"></div>
-                            </div>
-                            <div class="progress">
-                                <h3>
-                                    Project Management</h3>
-                                
-                                <div class="light-bar"></div>
-                                <div class="percent-bar python"></div>
-                            </div>
-                            <div class="progress">
-                                <h3>
-                                    Strategic Planning</h3>
-                                
-                                <div class="light-bar"></div>
-                                <div class="percent-bar cpp"></div>
-                            </div>
-                            <div class="progress">
-                                <h3>
-                                    SQL</h3>
-                                
-                                <div class="light-bar"></div>
-                                <div class="percent-bar css3"></div>
-                            </div> 
-                            <div class="progress">
-                                <h3>
-                                    MS-Office</h3>
-                                
-                                <div class="light-bar"></div>
-                                <div class="percent-bar ms"></div>
-                            </div> 
-                    </div>
-                       
-
-                </div>
-                   
-            
-            </div>    
-    </section>
-
-
-    <!-- Experience -->
-    <section class="experience" id="exp">
-        <h1 class="heading">My <span>Experience</span></h1>
-        <div class="my-exp">
-            
-            
-
-            
-
-            
-
-
-
-                            <div class="box">
-                                <div class="circle">
-                                    <div class="left">
-                                        <h3>NetCarrots Loyalty Services</h3>
-                                        <p class="p">Full Time - 3 yrs 4 mons</p>
-                                        </div>
-                                    <h4>Program Manager - Engagement Management</h4>
-                                    <h5>Oct 2022 - Present · 6 mos</h5>
-                                    
-                                </div>
-                            
-                            
-                                <div class="circle">
-                                    <h4>Assistant Manager - Engagement Management</h4>
-                                    <h5>Aug 2021 - Oct 2022 · 1 yr 3 mos</h5>
-                                    
-                                </div>
-                            
-                            
-                                <div class="circle">
-                                    <h4>Sr. Program Executive - Engagement Management
-                                        </h4>
-                                    <h5>Jul 2021 - Aug 2021 · 2 mos</h5>
-                                    <p></p>
-                                </div>
-                            
-                            
-
-                            
-                                <div class="circle">
-                                    <h4>Program Executive - Engagement Management
-                                        </h4>
-                                    <h5>Dec 2019 - Jul 2021 · 1 yr 8 mos</h5>
-                                    <p></p>
-                                </div>
-                            </div>
-            
-                            <div class="box">
-                                <div class="circle">
-                                    <div class="medium">
-                                        <h3>SOLVERE GLOBAL</h3>
-                                        <p class="p">Full Time - 3yrs 3mons</p>
-                                    </div>
-                                    <h4>Program Manager - Engagement Management</h4>
-                                    <h5>Oct 2022 - Present · 6 mos</h5>
-                                    
-                            
-                            
-                                <div class="circle">
-                                    <h4>Assistant Manager - Engagement Management</h4>
-                                    <h5>Aug 2021 - Oct 2022 · 1 yr 3 mos</h5>
-                                    
-                                </div>
-                            
-                            
-                                <div class="circle">
-                                    <h4>Sr. Program Executive - Engagement Management
-                                        </h4>
-                                    <h5>Jul 2021 - Aug 2021 · 2 mos</h5>
-                                    <p></p>
-                                </div>
-                            
-                            
-
-                            
-                                <div class="circle">
-                                    <h4>Program Executive - Engagement Management
-                                        </h4>
-                                    <h5>Dec 2019 - Jul 2021 · 1 yr 8 mos</h5>
-                                    <p></p>
-                                </div>
-                            </div>
-                        
-                 
-            
-            
-
-                            <!-- items -->
-                           
-        </div>
-        <div class="box">
-            <div class="circle">
-                <h4>GIS EngineerGIS Engineer
-                    </h4>
-                <h5>Apr 2015 - Nov 2017 · 2 yrs 8 mos</h5>
-               
-            </div>
-        
-        
-            <div class="circle">
-                <h4>Jr. GIS Engineer
-                    </h4>
-                <h5>Aug 2013 - Apr 2015 · 1 yr 9 mo</h5>
-             </div>
-        </div>
-    </section>
-    
-
-
-
-    <!-- ---------Projects -->
-    <section class="projects" id="projects">
-        <h1 class="heading">My  <span>Projects </span></h1>
-        <div class="projects-container">
-
-            <div class="box">
-                <div class="wrapper">
-                    <h3>Project-1</h3>
-                <div class="my-project">
-                    <h4>Club Maestro - Project Management and Successful Delivery</h4>
-                    <h5>
-                    Aug 2021 - Present</h5>
-                        <p>Club Maestro is an exclusive Loyalty Program APP for Architects. Launched from Scratch and created a good member base within a year of launch. Proved to be Super User friendly for both Architects and Entire Sales Hierarchy.</p>
-                </div>
-                </div>
-                
-                <div class="company">
-                    <h3>Association with</h3>
-                    <p>NetCarrots Loyalty Services</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="wrapper">
-                    <h3>Project-2</h3>
-                <div class="my-project">
-                    <h4>
-                        Saudi Postal Code and Housing Digitization with ArcGis</h4>
-                    <h5>Jan 2016 - Mar 2017</h5>
-                    <p>Completed geographical cartography of Saudi Postal Code creation and addressing by leading a team of 25.</p>
-                </div>
-                </div>
-                
-                <div class="company">
-                    <h3>Association with</h3>
-                    <p> Cyient</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="wrapper">
-                    <h3>Project-3</h3>
-                <div class="my-project">
-                    <h4>
-                        Digitization of Roads and Traffic Signs of Europe for Autonomous Driving</h4>
-                    <h5>Mar 2014 - Jan 2016</h5>
-                    <p>Worked as a Group lead on an Autonomous Driving project for digitising entire Europe Traffic Signs and Road networks in TomTom GPS Navigation Database</p>
-                </div>
-                </div>
-                
-                <div class="company">
-                    <h3>Association with</h3>
-                    <p>Cyient</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="wrapper">
-                    <h3>Project-4</h3>
-                <div class="my-project">
-                    <h4>Road Network and Built up Area Digitization of Brazil 
-                        </h4>
-                    <h5>Aug 2013 - Mar 2014</h5>
-                    <p>Captured Road Networks, Built-up Areas, Centre of Settlements and POIs </p>
-                </div>
-                </div>
-                
-                <div class="company">
-                    <h3>Association with</h3>
-                    <p>Cyient</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ---------awards -->
-    <section class="awards">
-        <h1 class="heading"><span>Awards</span> & <span>Honours</span></h1>
-        <div class="awards-container">
-
-            
-                 
-                <div class="box">
-                    <div class="my-award">
-                        <h4>
-                            Outshining Star</h4>
-                        <h5>
-                            Issued by Netcarrots.com Pvt Ltd · Jun 2022</h5>
-                            <p></p>
-                    </div>
-                    
-                    <div class="company">
-                        <h3>Association with</h3>
-                        <p>NetCarrots Loyalty Services</p>
-                    </div>
-                </div>
-                   <div class="box">
-                    <div class="my-award">
-                        <h4>
-                            
-                            Tech Expert</h4>
-                        <h5>
-                            Issued by Sanjeev Jain · Nov 2019</h5>
-                            
-                    </div>
-                    
-                    <div class="company">
-                        <h3>Association with</h3>
-                        <p>Artec Builders</p>
-                    </div>
-                   </div>
-                   <div class="box">
-                    <div class="my-award">
-                        <h4>
-                            
-Distinguished Contributor</h4>
-                        <h5>
-                            Issued by Cyient Ltd · Aug 2017</h5>
-                           
-                    </div>
-                    
-                    <div class="company">
-                        <h3>Association with</h3>
-                        <p>Cyient</p>
-                    </div>
-                   </div>
-                
-        </div>
-    </section>  
-
-    <!-- Projects -->
-
-    
-    
-    
-    
-    
-    <!-- Contact me -->
-    <section class="contact" id="contact">
-        <h1 class="heading">Contact  <span>Me </span></h1>
-        <div class="contact-container">
-            <h2 class="h2">Have you any Question?</h2>
-            <h5>I'm at your service</h5>
-            <div class="contact-box ">
-                <div class="box">
-                    <div class="contact-item ">
-                       
-                      <h4><div class="contact-icon"><i class="fa fa-phone"></i></div> 
-                        &nbsp;Call us on</h4> 
-                      <p>+91 9999756959</p>
-                    </div>
-                    <div class="contact-item ">
-                         
-                        <h4><div class="contact-icon"><i class="fa fa-building"></i>
-                        </div>&nbsp;Office</h4> 
-                        <p>Noida</p>
-                      </div>
-                      <div class="contact-item ">
-                        
-                        <h4><div class="contact-icon"><i class="fa fa-envelope"></i></div> 
-                            &nbsp;Email</h4> 
-                        <p>gdhaka91@gmail.com</p>
-                      </div>
-                      <div class="contact-item ">
-                           
-                          <h4><div class="contact-icon"><i class="fa-brands fa-linkedin">
-
-                          </i></div>&nbsp;Linked In</h4> 
-                        <p>linkedin.com/in/gaurav-dhaka/</p>
-                      </div>
-                </div>
-                <div class="form">
-                    <div class="box">
-                        <form >
-                            <input type="text" placeholder="Your Name" id="name" 
-                            class="txt">
-                            
-                            <input type="email" placeholder="Your email address" 
-                            class="email" id="email" >
-                            
-                            
-                            <textarea  placeholder="Your Message" class="area" id="message">
-
-                            </textarea>
-                        </form>
-                       
-                    </div>
-                    <button id="mail-btn" class="btn btn-contct" onclick="_mail_btn()">Send</button>
-                </div>
+        <div class="content">
+            <h1 class="heading1">Stay Safe Stay Healthy</h1>
+            <p>Galgotia's Hospital is a well-known hospital located in Greater Noida, India. The hospital is known for its excellent medical facilities, state-of-the-art infrastructure, and highly trained medical staff. </p>
+            <div class="btn1">
+                <button type="button" class="btn" onclick="call()">Contact us</button>
             </div>
             
         </div>
     </section>
+    <!--  -------------------- -->
+    <!-- ---------------------- -->
 
-    
-
-
-    <!-- Footer -->
-    <section class="footer">
-        <div class="footer-container">
-            <div class="left">
-                <div class="footer-nav" id="navbar">
-                    <ul class="list">
-                        <li><a href="#" class="nav-link-fade-up animate"><i class="fas fa-chevron-right"></i>Home</a></li>
-                        <li><a href="#about" class="nav-link-fade-up"><i class="fas fa-chevron-right"></i>About me</a></li>
-                        <li><a href="#personal" class="nav-link-fade-up"><i class="fas fa-chevron-right"></i>Qualification</a></li>
-                        <li><a href="#exp" class="nav-link-fade-up"><i class="fas fa-chevron-right"></i>Experience</a></li>
-                        <li><a href=".\contact.html" class="nav-link-fade-up" target="blank"><i class="fas fa-chevron-right"></i>Contact</a></li>                                                  
-                    </ul>
-                </div>
+    <section class="dr-service" id="avail" style="background-color: #f1f1f1;">
+        <h1 class="heading" id="h1">Availability</h1>
+        <div class="container">
+            <div class="icon-service">
+                <i class="fas fa-user-md"></i>
+                <h3>140+</h3>
+                <p>At Work</p>
             </div>
-                <div class="right">
-                   
-                        <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
-            <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
-            <a href="#"> <i class="fab fa-youtube"></i> pinterest </a>                    
-                    
-                </div>
+            <div class="icon-service">
+                <i class="fas fa-user"></i>
+                <h3>1040+</h3>
+                <p>Satisfied Patients</p>
+            </div>
+            <div class="icon-service">
+                <i class="fas fa-procedures"></i>
+                <h3>500+</h3>
+                <p>Bed Facility</p>
+            </div>
+            <div class="icon-service">
+                <i class="fas fa-ambulance"></i>
+                <h3>200+</h3>
+                <p> Ambulance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------- -->
+    <!-- ----------- -->
+    <section class="service" id="service">
+        <h1 class="heading">Services</h1>
+        <div class="container2">
+            <div class="service-icon">
+                <i class="fas fa-pump-medical"></i>
+                <h3>Free Check-up</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="service-icon">
+                <i class="fas fa-ambulance"></i>
+                <h3>24/7 Ambulance</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="service-icon">
+                <i class="fas fa-pills"></i>
+                <h3>Medicine</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet .</p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="service-icon">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Emergency</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="service-icon">
+                <i class="fas fa-procedures"></i>
+                <h3>Bed Facility</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="service-icon">
+                <i class="fas fa-prescription"></i>
+                <h3>24/7 Experts</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+        </div>
+        
+    </section>
+    <!-- ------------ -->
+    <!-- ------------ -->
+
+    <section class="about-hos" id="hospital" style="background-color: #f1f1f1;">
+        <h1 class="heading">About us</h1>
+        <div class="hospital">
+            <div class="img">
+                <img src="image/about-img.svg" alt="">
+            </div>
+            <div class="content">
+                <h1 class="abt-head">We'll take care of your Health</h1>
+                <p>Galgotias Hospital is a multi-specialty hospital located in Greater Noida, Uttar Pradesh, India. The hospital provides a wide range of medical services, including cardiology, neurology, orthopedics, gastroenterology, and oncology, among others. </p>
+                    <p>
+The hospital has a team of highly qualified and experienced doctors, nurses, and other medical staff. In addition, the hospital also offers various facilities such as 24-hour emergency services, pharmacy, laboratory, radiology, and blood bank, among others. 
+                    </p>
                 
+                
+            </div>
         </div>
        
-        
     </section>
+    <!-- ---------------- -->
+    <!-- ---------------- -->
 
-   
-         
-
-
-
-
-
-    
-    <footer class="copyright">
-        <div class="tagline">
-            <h3>Created by Shailesh Attri | All Rights reserved. </h3>
+    <section class="doctors" id="doctors">
+        <h1 class="heading">Our Doctors</h1>
+        <div class="doctor-container">
+            <div class="box">
+                <img src="image/doctor1.jpg" alt="">
+                <h3>Dr. S C Rajendran</h3>
+                <p>Dermatologist  </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor2.jpg" alt="">
+                <h3>Dr. M G Gopal</h3>
+                <p>Gastroenterologist </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor3.jpg" alt="">
+                <h3>Dr. Uma Rai
+                    </h3>
+                <p>
+                    Gynecologist/Obstetrician  </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor4.jpg" alt="">
+                <h3>Dr. Rajendra 
+                   </h3>
+                <p>General Physician</p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor5.jpg" alt="">
+                <h3>Dr. Ajay Kumar</h3>
+                <p>Gastroenterologist </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
+            <div class="box">
+                <img src="image/doctor6.jpg" alt="">
+                <h3>Dr. Rajiv Agarwal</h3>
+                <p>Cardiologist </p>
+                <button type="button" class="btn">Know more</button>
+            </div>
         </div>
         
-    </footer>
-    </body>
-    </html>
-    
+    </section>
+    <!-- ------------- -->
+    <!-- -------------- -->
+
+    <section class="appointment" style="background-color: #f1f1f1;" id="appointment">
+        <h1 class="heading">Book Appointment</h1>
+        <div class="input-container">
+            <form>
+                <div class="form-container">
+                    
+                </div>
+                <h3>Patient Information:</h3>
+                <label for="fullname">Full Name:</label>
+                <input placeholder="" type="text" id="fullname" name="fullname" required>
+        
+                <label for="dob">Date of Birth:</label>
+                <input type="date" placeholder="" id="dob" name="dob" required>
+        
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male" >Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+        
+                <label for="address">Address:</label>
+                <textarea id="address"  name="address" required></textarea>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="+91-...." name="phone" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="" name="email" required>
+        
+                
+        
+                
+                <div class="sub-">
+                    <input type="submit" value="Submit" class="submit" onclick="submit()">
+                </div>
+                
+            </form>
+        </div>
+    </section>
+        <!-- ----------------- -->
+        <!-- ----------------- -->
+
+        <section class="links" id="contact-us">
+            <div class="all-container">
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="#home"> <i class="fas fa-chevron-right"></i> Home </a>
+                    <a href="#avail"> <i class="fas fa-chevron-right"></i> Availability </a>
+                    <a href="#services"> <i class="fas fa-chevron-right"></i> Services </a>
+                    <a href="#hospital"> <i class="fas fa-chevron-right"></i> About us </a>
+                    <a href="#doctors"> <i class="fas fa-chevron-right"></i> Doctors </a>
+                    <a href="#appointment"> <i class="fas fa-chevron-right"></i> Appointment</a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> Contact us</a>
+                </div>
+                <div class="box">
+                    <h3>Our services</h3>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+                </div>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> +91-------- </a>
+                    <a href="#"> <i class="fas fa-phone"></i> +91----------- </a>
+                
+                    <a href="#"> <i class="fas fa-envelope"></i> galgotia@gmail.com </a>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> Greater Noida, 212144</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+                </div>
+            </div>
+            <h1 for="" class="logo2">
+                <i class="fas fa-heartbeat"> </i>&nbsp;&nbsp;Galgotias Hospital
+            </h1>
+        </section>
+
+        <!-- --------- -->
+        <!-- --------- -->
+        <footer class="my-footer">
+            <div class="footer">
+                <p>Created by Shailesh Attri | All rights reserved </p>
+            </div>
+        </footer>
+        
+
+</body>
+</html>
