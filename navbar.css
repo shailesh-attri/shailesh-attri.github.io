@@ -24,6 +24,9 @@ nav{
     display: block;
     float: right;
   }
+  nav ul{
+    margin-right: 3rem;
+  }
   nav ul li{
    display: inline-block;
    line-height: 80px;
