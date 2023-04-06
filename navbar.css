@@ -20,7 +20,7 @@ nav{
     font-family: 'Gumela';
     color:var(--main);
   }
-  nav .navbar {
+  nav .navbar {   
     display: block;
     float: right;
   }

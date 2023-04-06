@@ -70,7 +70,15 @@ window.addEventListener('scroll', function() {
     
   }
   
-
+  function toggleTheme(){
+    const navList = document.querySelector('.sidebar');
+    const menuBtn = document.querySelector('#circle');
+   
+    
+    
+    navList.classList.toggle('active');
+    
+  }
 
 
 
