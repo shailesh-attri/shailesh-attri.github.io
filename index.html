@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +11,11 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
 </head>
 <body>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <header class="header" id="header" >
         
         <label for="" class="logo">
@@ -34,12 +38,128 @@
             <div id="menu-btn" class="fas fa-bars" onclick="toggleNav()"></div>
             
     </header>
+    <section class="caro">
+      <style>
+    
+       
+    .swiper {
+      width: 100%;
+      height: 70vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      
+      background-size: cover;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+      <div class="swiper-slide"><img src="./images/pixel.jpg"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+          
+
     
     <!--               -->
     <!--               -->
     <section class="intro" id="home" >
         <div class="img">
-            <img src="image/home-img.svg" alt="">
+            <img src="images/home.png" alt="">
         </div>
         <div class="content">
             <h1 class="heading1">Stay Safe Stay Healthy</h1>
@@ -289,7 +409,10 @@ The hospital has a team of highly qualified and experienced doctors, nurses, and
                 <p>Created by Shailesh Attri | All rights reserved </p>
             </div>
         </footer>
-        
+
+
+
+       
 
 </body>
 </html>
