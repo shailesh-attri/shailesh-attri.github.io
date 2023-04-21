@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galgotia's Hospital</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+   
+    <header class="header" id="header" >
+        
+        <label for="" class="logo">
+            <i class="fas fa-heartbeat"> </i>Galgotias Hospital
+        </label>
+        
+        <div class="navbar" id="navbar">
+            <ul class="list">
+                
+                <li class="emergency"><a  href="#avail" ><i class="fa-solid fa-truck-medical"></i>&nbsp;Emergency</a></li>
+                <li><a href="./index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i>&nbsp;Back</a></li>
+                <!-- <li><a href="#service" class="nav-link-fade-up">Service</a></li>
+                <li><a href="#hospital" class="nav-link-fade-up">About us</a></li>
+                
+                <li><a href="#doctors" class="nav-link-fade-up">Doctors</a></li>
+                <li><a href="#appointment" class="nav-link-fade-up">Appointment</a></li>
+                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li> --> 
+                    
+                </ul>
+            </div>
+            <div id="menu-btn" class="fas fa-bars" onclick="toggleNav()"></div>
+            
+    </header>
+    <video muted plays-inline autoplay loop class="back-video">
+        <source src="./hospital.mp4" type="video/mp4">
+    </video>
+    <!-- <section class="user">
+        
+        <div class="sign-in">
+            <h1>SIGN IN</h1>
+            <div class="form">
+                <form action="">
+                    <label for="">Email id/Phone</label>
+                <input type="text">
+    
+                <label for="">Password</label>
+                <input type="password" name="" id="">
+                <a href="" class="h-btn">Sign in</a>
+                <div class="forgot">
+                    <a href="">Forgot password</a>
+                    <a href="">New User</a>
+                </div>
+                </form>
+                
+            </div>
+            
+        </div>
+        
+    </section> -->
+
+    <div class="user"  >
+            <h1>SIGN IN</h1>
+        <div class="sign-in">
+            <form>
+                
+                
+                <label for="fullname">Email/Phone:</label>
+                <input placeholder="" type="text" id="fullname" name="fullname" required>
+        
+                <label for="phone">Password:</label>
+                <input type="password" id="phone" name="phone" required>
+                
+                    
+            </form>
+            <a href="" class="h-btn sign-btn">Log in</a>
+            <div class="forgot">
+                <a href="">Forgot something</a>
+            <a href="">New Registration</a>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <section class="links" id="contact-us">
+        <div class="all-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#home"> <i class="fas fa-chevron-right"></i> Home </a>
+                <a href="#avail"> <i class="fas fa-chevron-right"></i> Availability </a>
+                <a href="#services"> <i class="fas fa-chevron-right"></i> Services </a>
+                <a href="#hospital"> <i class="fas fa-chevron-right"></i> About us </a>
+                <a href="#doctors"> <i class="fas fa-chevron-right"></i> Doctors </a>
+                <a href="#appointment"> <i class="fas fa-chevron-right"></i> Appointment</a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Contact us</a>
+            </div>
+            <div class="box">
+                <h3>Our services</h3>
+                <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +91-------- </a>
+                <a href="#"> <i class="fas fa-phone"></i> +91----------- </a>
+            
+                <a href="#"> <i class="fas fa-envelope"></i> galgotia@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Greater Noida, 212144</a>
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+        </div>
+        <h1 for="" class="logo2">
+            <i class="fas fa-heartbeat"> </i>&nbsp;&nbsp;Galgotias Hospital
+        </h1>
+    </section>
+
+    <!-- --------- -->
+    <!-- --------- -->
+    <footer class="my-footer">
+        <div class="footer">
+            <p>Created by Shailesh Attri | All rights reserved </p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+
+    </body>
+    </html>
