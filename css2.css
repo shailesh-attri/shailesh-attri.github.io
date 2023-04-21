@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Gumela';
+    src: url('./Gumela.ttf');
+}
+.back-video{
+    display: block;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    filter: brightness(0.25);
+}
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+    
+}
+section.find{
+    height: 100vh;
+}
+section.find,a{
+    color: white;
+}
+.find .finding{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.find h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.h-btn{
+    margin: 0rem 2rem;
+    padding: 0.5rem 1rem;
+    
+    border-radius: 20px;
+    background-color: var(--green);
+    transition: all 0.3s linear;
+}
+.h-btn:hover{
+    background-color: white;
+    color: var(--green);
+    
+}
+.header .navbar a{
+    background-color: brown;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+/* Sign in */
+
+/* .user .form input{
+    background-color: transparent;
+    color: white;
+    margin-bottom: 2rem;
+    border: 1px solid gray;
+    height: 30px;
+    border-radius: 10px;
+    width:300px;
+}
+.user .sign-in {
+    height: 100vh;
+    width:100%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -3rem;
+}
+.user  h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+.user .sign-in form{
+    height: 300px;
+    width:350px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    justify-content: center;
+    border-radius: 10px;
+    
+} */
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    padding-top: 5rem;
+    
+}
+.user .sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user form {
+        
+        
+        margin: 1rem 0;
+        background-color: transparent;
+        padding: 0.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color:white;
+        border:1px solid white;
+        border-radius: 10px;
+        
+      }
+      .user form label{
+        padding-top:1rem;
+        padding-bottom: 7px;
+        text-align: left;
+        
+        font-weight: bold;
+      }
+      .user form input{
+        margin-bottom: 1rem;
+        border:2px solid ;
+        border-radius: 10px;
+        color: white;
+        height: 40px;
+        background-color:transparent;
+        border: 1px solid gray;
+        padding:0 15px;
+        
+        
+      }
+     .user h1{
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+
+     }
+     
+.user label{
+    padding:0.5rem 0;
+}
+.forgot{
+    margin-top: 3rem;
+}
+.forgot a{
+    font-size: 15px;
+    margin: 0.5rem 0.5rem;
+}
+.forgot a:hover{
+    color: green;
+}
+
+.header #search-btn input.show-bar{
+    display: block;
+    transition: all 0.3s linear;
+    
+    
+}
+.header #search-btn{
+    display: flex;
+    
+}
+.header #search-btn input{
+    display: none;
+    transition: all 0.3s linear;
+    padding: 0 0.5rem;
+    border-radius: 20px;
+}
+.diff-navi{
+    background-color: var(--green);
+    height: 50px;
+    
+    
+}
+.diff-navi ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+    padding: 0rem 1rem;
+}
+.diff-navi ul li:hover{
+    background-color: red;
+    color: white;
+    transition: all 0.3s linear;
+    
+}

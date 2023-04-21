@@ -33,6 +33,16 @@
     navList.classList.toggle('active');
     
   }
+
+  function search_btn() {
+    
+   
+    const navList = document.querySelector('#search');
+    
+   
+    navList.classList.toggle('show-bar');
+    
+  }
   
   // function toggleNav() {
   //   var x = document.getElementById("navbar");

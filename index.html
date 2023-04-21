@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galgotia's Hospital</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+   
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css2.css">
 </head>
 <body>
-    
+   
     <header class="header" id="header" >
         
         <label for="" class="logo">
@@ -20,21 +21,50 @@
         
         <div class="navbar" id="navbar">
             <ul class="list">
-                <li><a href="#" class="nav-link-fade-up">Home</a></li>
-                <li><a href="#avail" class="nav-link-fade-up">Availability</a></li>
-                <li><a href="#service" class="nav-link-fade-up">Service</a></li>
+                <li id="search-btn" ><input id="search" placeholder="Search" type="text"><a  href="#" onclick='search_btn()'>&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="emergency"><a  href="#avail" ><i class="fa-solid fa-truck-medical"></i>&nbsp;Emergency</a></li>
+                <li><a href="./sign_in.html"><i class="fa-solid fa-user"></i>&nbsp;Sign In</a></li>
+                <!-- <li><a href="#service" class="nav-link-fade-up">Service</a></li>
                 <li><a href="#hospital" class="nav-link-fade-up">About us</a></li>
                 
                 <li><a href="#doctors" class="nav-link-fade-up">Doctors</a></li>
                 <li><a href="#appointment" class="nav-link-fade-up">Appointment</a></li>
-                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li>
-                    
+                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li> --> 
+               
                 </ul>
             </div>
             <div id="menu-btn" class="fas fa-bars" onclick="toggleNav()"></div>
             
     </header>
     
+    
+    <video muted plays-inline autoplay loop class="back-video">
+        <source src="./hospital.mp4" type="video/mp4">
+    </video>
+    <section class="find">
+        <div class="finding">
+            <h1>WHAT MAKES US BETTER, MAKES YOU BETTER.</h1>
+            <div class="find-btn">
+                <a href="" class="h-btn">Find Doctors</a>
+                <a href="" class="h-btn">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+    
+    <div class="diff-navi">
+        <div class="navi" >
+            <ul class="list">
+                
+                <li><a href="#service" class="nav-link-fade-up">Service</a></li>
+                <li><a href="#hospital" class="nav-link-fade-up">About us</a></li>
+                
+                <li><a href="#doctors" class="nav-link-fade-up">Doctors</a></li>
+                <li><a href="#appointment" class="nav-link-fade-up">Appointment</a></li>
+                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li> 
+               
+                </ul>
+                </div>
+    </div>
     <!--               -->
     <!--               -->
     <section class="intro" id="home" >
@@ -290,6 +320,6 @@ The hospital has a team of highly qualified and experienced doctors, nurses, and
             </div>
         </footer>
         
-
+        <script src="script.js"></script>
 </body>
 </html>
