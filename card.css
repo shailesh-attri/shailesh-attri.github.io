@@ -1,0 +1,129 @@
+
+.wrapper .carousel{
+    display: flex;
+    width:max-content;
+    
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    
+    
+}
+.carousel img{
+    
+    height: 320px;
+    object-fit: cover;
+    padding: 0 1rem;
+    border-radius: 20px;
+    
+    
+}
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+.item{
+    width: calc(100%/3);
+    height: 400px;
+    object-fit: cover;
+    padding: 0 1rem;
+    border-radius: 20px;
+    
+    
+    
+    overflow: hidden;
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;
+    border: 2px solid var(--main-color);
+    padding: 2rem 1rem;
+}
+.item .avatar{
+    display: block;
+    margin:5px  auto 20px;
+    width:80%;
+    height:150px;
+    object-fit: contain;
+    
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #7e878d;
+}
+.item .content{
+    padding:10px;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.direction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.direction i{
+    display: flex;
+    background-color:var(--main-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+  
+.exp-container{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-radius: 20px;
+
+   }
+   .exp-container p{
+    padding: 2rem;
+   }
+   .exp-container h3{
+    color: var(--main-color);
+   }
+
+   .exp-container h5{
+    color: gray;
+   }
+   .exp-container img{
+    width: 100%;
+    height: auto;
+   }
+
+   @media (max-width:1300px){
+     .guru-cards{
+        width: 100%;
+     }
+     .yoga-guru{
+        width: 100%;
+     }
+   } 
+   @media (max-width:1150px){
+    .guru-cards{
+       width: 100%;
+    }
+    .yoga-guru{
+       width: 100%;
+    }
+  } 

@@ -26,10 +26,11 @@
 
   function toggleNav() {
     const menuBtn = document.querySelector('#menu-btn');
-    const navList = document.querySelector('.navbar');
+    const navList = document.querySelector('#navbar');
     
-    menuBtn.classList.toggle('fa-times');
-    menuBtn.classList.toggle('fa-bars');
+    // menuBtn.classList.toggle('fa-bars');
+    // menuBtn.classList.toggle('fa-arrow-right');
+    
     navList.classList.toggle('active');
     
   }
@@ -53,5 +54,59 @@
   //   }
   // }
   
+  
+  // // Poses carousel
+  // const carousel = document.querySelector('.carousel')
+  // firstImg = carousel.querySelectorAll('img')[0]
+  // arrowIcon = document.querySelectorAll('.wrapper i')
+  
+  // let isDragStart = false, prevPageX, prevScrollLeft
+  // let firstImgWidth = firstImg.clientWidth + 1.5
+
+  // arrowIcon.forEach(icon => {
+  //   icon.addEventListener('click', () => {
+  //     carousel.scrollLeft += icon.id == 'left' ? -firstImgWidth : firstImgWidth
+  //   })
+  // })
+
+  // const dragStart = (e) => {
+  //   isDragStart = true
+  //   prevPageX = e.pageX
+  //   prevScrollLeft = carousel.scrollLeft
+  // }
+
+  // const dragStop = () => {
+  //   isDragStart = false;
+
+  // }
+
+  // carousel.addEventListener('mousedown', dragStart)
+  // carousel.addEventListener('mousemove', dragging)
+  // carousel.addEventListener('mouseup', dragStop)
+
+
+
+  const carousel = document.querySelector(".carousel");
+const items = document.querySelectorAll(".item");
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+
+let index = 0;
+
+right.addEventListener("click", () => {
+  index++;
+  if (index > items.length - 1) {
+    index = 0;
+  }
+  carousel.style.transform = `translateX(${-index * 320}px)`;
+});
+
+left.addEventListener("click", () => {
+  index--;
+  if (index < 0) {
+    index = items.length - 1;
+  }
+  carousel.style.transform = `translateX(${-index * 320}px)`;
+});
   
   

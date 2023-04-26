@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +26,9 @@ html{
 body{
     overflow-x: hidden;
     width: 100%;
+    
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);;
+    
 }
 ::selection{
     background-color: var(--green);
@@ -43,37 +47,55 @@ body{
      padding-bottom: 1.8rem;
      
 }
-.heading{
+h1{
     
-    text-align:center;
-     font-size:60px; 
-    text-transform:uppercase; 
-    color:var(--green); 
-    letter-spacing:4px;
-    font-family: 'Bebas Neue', cursive;
-     font-weight:400;
-     text-shadow:var(--box-shadow);
-     padding-bottom: 1.8rem;
-     /* text-shadow: 2px 2px 2px  var(--light-color); */
+    
+     font-size:2.5rem; 
+    
+     
+    
 }
 section{
-    padding:5rem 2%;
+    
+    padding:5rem 5%;
+    
     padding-bottom: 10rem;
+    width: 100%;
 }
-
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
 
 /* Menu bar toggle */
 #menu-btn{
-    display: none;
+    display: block;
     background-color: transparent;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
     margin:0 1rem;
     padding: 1px .3rem;
     font-weight: bold;
-    color: var(--green);
-    border: 2px solid var(--green);
-    transition: all 0.6s linear;
+    color: #5E1914;
+    
+    transition: all 0.3s linear;
+}
+#menu-btn:hover{
+    transform: rotate(90deg);
+}
+#menu-btn2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    margin:0rem 1rem;
+    margin-top: 0.5rem;
+    
+    font-weight: bold;
+    color: #5E1914;
+    
 }
 
 /* Media queries */
@@ -84,21 +106,24 @@ section{
 
 /* -------------- */
 header.header{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     position: fixed;
     top:0;
-    right:0;
+    
     left:0;
-    background-color: var(--green);
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);;
     z-index: 1000;
     transition: all 0.3s linear;
     height:80px;
     color: white;
+    
+    
+    
 }
-
 header ul li{
     float:left;
     padding:0px 15px;
@@ -107,490 +132,152 @@ header ul li a{
     
     font-weight: bold;
     
-    
+    background-color: transparent;
+    color: var(--main-color);
     text-decoration: none;
     text-align: center;
-    padding: 20px 0;
+    
     display: block;
     position: relative;
     transition: all 0.3s ease;
 }
-#header li:hover a::before {
-    right: 0;
-    left: 0;
-  }
- 
-  #header a:hover {
-    color: #fafafa;
-  }
-  #header i:hover {
-    color: white;
-  }
-  #header a::before {
-    content: "";
-    transition: all 0.4s ease-in-out;
-    position: absolute;
-    right: 50%;
-    left: 50%;
-    bottom: 0;
-    height: 2px;
-    background-color: #3ce76f;
-  }
-  #header a:hover::before {
-    right: 0;
-    left: 0;
-  }
+
    
   li {
       list-style: none;
   }
 
-header.header label.logo {
-    text-transform: uppercase;
-    width: 300px;
-    
-    font-size: 30px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing:3px;
-        font-weight:bold;
-    margin-left:70px;
-    text-shadow:var(--box-shadow);
-    
+header.header label.logo img{
+    width: 100%;
+    height: 70px;
+    color: white;
+}
+header.header label.logo{
+    transform: translateX(60px);
 }
 
 label.logo i{
     padding-right:5px;
 }
 header.scrolled {
-    box-shadow: 0.5px 0.5px 10px 0.5px rgb(0, 0, 0);
+    
     transition: all 0.3s linear;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);;
+ box-shadow: 5px 5px 15px gray;
+ 
 }
 
+/* Main content */
+section.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ruler{
+    width: 50%;
+    height: 5px ;
+    margin: 1rem 0;
+    background: linear-gradient(90deg,hsla(25,71%,73%,.529),rgba(202,70,37,.98),var(--main-color),rgba(202,70,37,.98),hsla(25,71%,73%,.529));
+    border-radius: 50%;
+}
 
-
+.home .text-content {
+    padding: 2rem 15rem;
+    text-align: center;
+}
 
 /* ----------------- */
-section.intro{
+/* Benefits */
+ .benefits .yoga-facts{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: space-around;
+    
+ }
+ .benefits .yoga-facts img{
+    
+    width: 50%;
+    height: auto;
+    
+ }
+ .benefits .yoga-facts .image{
     display: flex;
-    padding-left:40px;
-    padding-right:40px;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:2rem;
-    
-    
-}
-section.intro div.img{
-    width:100%;
-}
-.intro .img {
-    flex:1 1 .5rem;
-}
-.intro .content{
-    flex:1 1 .5rem;
-}
-p{
-    font-family: 'Inter', sans-serif;
-    line-height: 1.8rem;
-    padding:15px 5px;
-    font-weight: bold;
-    word-spacing: 2px;
-    color:var(--light-color);
-}
-.intro .content .btn{
-    padding: 5px 5px;
-    width:120px;
-    background-color: transparent;
-    color:var(--green);
-    border-color: var(--green);
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-}
-.intro .content .btn:hover{
-    background-color: var(--green);
-    color:white;
-    transition: all 0.5s ease-in-out;
-    
-    transform: scale(1.2);
-}
-.intro .content .btn{
-    transition: all 0.5s ease-in-out;
-    transform: scale(1);
-}
-
-.intro .content .btn1{
-    text-align: center;
-}
+    justify-content: center;
+ }
 
 
-
-
-/* ------------- */
-section .container{
+ .text-content li{
+    list-style-type:square;
+    text-align: left;
+    padding: 0.3rem 0;
+    transform: translateX(10%);
+ }
+ .history{
     display: grid;
-    gap:1rem;
+    grid-template-columns:60% 40%;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 0.5fr));
-    
-}
-section.dr-service .icon-service{
-    border-color: var(--green);
-    border-width: 10px solid;
-    box-shadow: 0.5px 0.5px 2px 0.5px rgb(0, 0, 0);
-    border-radius: 2px;
     text-align: center;
-    padding:2rem;
-    border-color: var(--green);
-    border-radius: 2px;
-    height:180px;
-    width:220px;
-
-}
-section.dr-service .icon-service:hover{
-    transform: scale(1.1);
-    box-shadow: 0.5px 0.5px 10px 0.5px rgb(2, 19, 2);
-    transition: all 0.3s ease-out;
-}
-    section.dr-service .icon-service{
-        transition: all 0.3s ease-out;
-    }
-
-.dr-service .icon-service i{
-    color:#16a085;
-    font-size: 2.5rem;
-    padding-bottom: 1.2rem;
-}
-.dr-service .icon-service h3{
-    
-    text-align:center;
-     font-size:30px; 
-    text-transform:uppercase; 
-    color:var(--green); 
-    letter-spacing:1px;
-    font-family:"Playfair Display",
-     serif; font-weight:bold;
-     text-shadow:var(--box-shadow);
-     line-height: 20px;
-}
-.dr-service .icon-service p{
-    font-family: 'Inter', sans-serif;
-    line-height: 1.8rem;
-    padding:15px 5px;
-    font-weight: bold;
-    word-spacing: 2px;
-    color:var(--light-color);
-}
+ }
+ .yoga-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ .yoga-history p{
+    padding: 0 3rem;
+ }
+ .history img{
+    width: 50%;
+    height: 50%;
+ }
 
 
-
-
-
-/* ------------ */
-
-
-section .container2{
+ /* international */
+ .international .yoga-day{
     display: grid;
-    gap:2rem;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+    
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-}
-.service .service-icon{
-    border-color: var(--green);
-    border-width: 10px solid;
-    box-shadow: 0.5px 0.5px 2px 0.5px rgb(0, 0, 0);
-    border-radius: 2px;
+ }
+ .international img{
+    width: 100%;
+    height: auto;
+ }
+ .international .text-content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding:2rem;
-    border-color: var(--green);
-    border-radius: 2px;
-    height:230px;
-    width:300px;
-
-}
-section.service .service-icon:hover{
-    transform: scale(1.1);
-    box-shadow: 0.5px 0.5px 10px 0.5px rgb(0, 0, 0);
-    transition: all 0.3s ease-out;
-}
-    section.service .service-icon{
-        transition: all 0.3s ease-out;
-    }
-
-.service .service-icon i{
-    color:#16a085;
-    font-size: 2rem;
-    padding-bottom: 1.2rem;
-}
-.service .service-icon h3{
-    
-    text-align:center;
-     font-size:20px; 
-    text-transform:uppercase; 
-    color:var(--green); 
-    letter-spacing:1px;
-    font-family:"Playfair Display",
-     serif; font-weight:bold;
-     text-shadow:var(--box-shadow);
-     line-height: 20px;
-}
-.service .service-icon p{
-    font-family: 'Inter', sans-serif;
-    line-height: 1.8rem;
-    padding:15px 5px;
-    font-weight: bold;
-    word-spacing: 2px;
-    color:var(--light-color);
-}
-.service .service-icon .btn{
-    
-        padding: 5px 5px;
-        width:90px;
-        background-color: transparent;
-        color:var(--green);
-        border-color: var(--green);
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-    }
-    .service .btn:hover{
-        background-color: var(--green);
-        color:white;
-        transition: all 0.3s linear;
-        
-        transform: scale(1.2);
-    }
-    .service .btn{
-        transition: all 0.3s linear;
-        transform: scale(1);
-    }
-
-
-
-
-
-    
-    /* ----------- */
-    .hospital{
-        display: flex;
-        padding-left:40px;
-        padding-right:40px;
-        align-items: center;
-        flex-wrap: wrap;
-        gap:2rem;
-        
-        
-    }
-    .about-hos .hospital img{
-        width:100%;
-    }
-    .about-hos .img{
-        flex:1 1 .5rem;
-    }
-     .content{
-        flex:1 1 .5rem;
-    }
-    .about-hos .abt-head{
-        font-size: 25px;
-        text-align:center;
-     
-    text-transform:uppercase; 
-    color:var(--green); 
-    letter-spacing:2px;
-    font-family: 'Lato', sans-serif;
-     font-weight:400;
-     
-     padding-bottom: 0.2rem;
-     padding-top:2rem;
-    }
-      /* 
-      ------------ */
+ }
+ .international .text-content p{
+    padding: 0 5rem;
+ }
 
 
 
 
 
 
-      section .doctor-container{
-        display: grid;
-        gap:2rem;
-        align-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-    }
-    .doctors .box{
-        border:1px solid;
-        border-color: var(--green);
-        border-width: 10px solid;
-        box-shadow: 0.5px 0.5px 2px 0.5px rgb(0, 0, 0);
-        border-radius: 2px;
-        text-align: center;
-        padding:2rem;
-        border-color: var(--green);
-        border-radius: 2px;
-        height:450px;
-        width:300px;
-        
-    
-    }
-    section.doctors .box:hover{
-        transform: scale(1.1);
-        box-shadow: 0.5px 0.5px 10px 0.5px rgb(0, 0, 0);
-        transition: all 0.3s ease-out;
-    }
-        section.doctors .box{
-            transition: all 0.3s ease-out;
-        }
-    
-    .doctors .box img{
-        height:15rem;
-        border: 4px solid var(--green);
-        border-radius: 4px;
-        padding-bottom:1rem;
-        
-        box-sizing: border-box;
-        padding:0.1px 0.1px;
-        object-fit: cover;
-
-    }
-    /* .doctors .box div.dr-img{
-        
-        border: 6px solid var(--black);
-    height: 236px;
-    } */
-    .doctors .box h3, .appointment form h3{
-        
-        text-align:center;
-         font-size:20px; 
-        text-transform:uppercase; 
-        color:var(--green); 
-        letter-spacing:1px;
-        font-family: 'Lato', sans-serif;
-        font-weight:bold;
-         
-         line-height: 20px;
-         padding-top: 2rem;
-    }
-    .doctors .box .btn{
-    
-        padding: 5px 5px;
-        width:90px;
-        background-color: transparent;
-        color:var(--green);
-        border-color: var(--green);
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-    }
-    .doctors .btn:hover{
-        background-color: var(--green);
-        color:white;
-        transition: all 0.10s ease;
-        
-        transform: scale(1.2);
-    }
-    .doctors .btn{
-        transition: all 0.10s ease;
-        transform: scale(1);
-    }
-
-    /* --------- */
-    section.appointment{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .appointment .input-container {
-        display: grid;
-        align-items: center;
-    }
-    .appointment .input-container {
-        border:1px solid;
-        border-color: var(--green);
-        border-width: 10px solid;
-        box-shadow: 0.5px 0.5px 2px 0.5px rgb(0, 0, 0);
-        border-radius: 32px;
-        text-align: center;
-        padding:2rem;
-        border-color: var(--green);
-        background-color: white;
-        
-        height: 130vh;
-        width: 600px;
-        /* width: 100%; */
-        align-content: center;
-        box-shadow: 0.5px 0.5px 10px 0.5px rgb(0, 0, 0);
-        
-        
-    }
-    .appointment form {
-        width: 80%;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        
-      }
-      .appointment form label{
-        padding-top:1rem;
-        padding-bottom: 7px;
-        text-align: left;
-        color: var(--light-color);
-        font-weight: bold;
-      }
-      .appointment form input{
-        margin-bottom: 1rem;
-        border:2px solid ;
-        border-radius: 10px;
-        border-color: var(--green);
-        height: 40px;
-        box-shadow:0.1px 0.1px 5px 0.1px var(--green);
-        padding:0 15px;
-        color:var(--light-color);
-        
-      }
-      .appointment form textarea, select{
-        margin-bottom: 1rem;
-        border:2px solid ;
-        border-color: var(--green);
-        height: 40px;
-        border-radius: 10px;
-        box-shadow:0.1px 0.1px 5px 0.1px var(--green);
-        padding:0 15px;
-        color:var(--light-color);
-      }
 
 
-      .appointment  form .submit{
-    
-        padding: 5px 5px;
-        
-        width:90px;
-        background-color: transparent;
-        color:var(--green);
-        border-color: var(--green);
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-        background-color: var(--green);
-        color: white;
+    section.links{
+        background-color: var(--main-color);
+        padding: 1rem 0;
     }
-    .appointment form .submit:hover{
-        background-color: var(--green);
-        color:white;
-        transition: all 0.10s ease;
-        
-        transform: scale(1.2);
-    }
-    .appointment  form .sub-btn{
-        padding-top:10px;
-    }
-    
     section .all-container{
         display: grid;
         gap:2rem;
-        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr))
+        justify-content: space-around;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(240, 240, 240);
     }
    
 
@@ -649,298 +336,12 @@ section.service .service-icon:hover{
         text-shadow:var(--box-shadow);
         
     }
-    @media (max-width: 1050px) {
-        #menu-btn{
-         
-          display: block;
-      
-        }
-        html{
-          scroll-behavior: smooth;
-          width:100%
-      }
-        .intro img{
-          width: 100%;
-          height: auto;
-          flex:1 1 .2rem;
-        }
-        .intro .content{
-            height: auto;
-            font-size: 25px;
-        }
-        .intro .heading{
-            font-size:50px;
-        } .heading1{
-            font-size: 50px;
-            padding-bottom:2px;
-        }
-        header {
-          padding: 18px 4%;
-        }
-      
-        section {
-          padding: 6rem 7%;
-          width: 100%;
-        }
-        section .container{
-            display: grid;
-            gap:2rem;
-            align-items: center;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 0.5fr));
-            
-        }
-        section.dr-service .icon-service{
-             
-            height:268px;
-            width:100%;
-        }
-        .service .service-icon {
-            height:270px;
-        }
-        section.dr-service .icon-service i{
-            font-size: 30px;
-        }
 
-        .service .service-icon{
-            width:100%;
-        }
-
-        .hospital{
-            width: 100%;
-            }
-            .hospital .img img{
-                width: 100%;
-            }
-            .doctors .box{
-                width:100%;
-            }
-
-            .appointment .input-container {
-                width: 100%;
-                height: auto;
-            }
-            .links .logo2 {
-                    margin-bottom: -30px;
-            }
-
-
-            header .navbar {
-                position: absolute;
-                top:115%;
-                transform-origin: top right;
-                width: 250px;
-               font-size: 10px;
-               border-radius:20px ;
-               box-shadow: 1px 2px 10px 0px rgb(46, 82, 46);
-                background:#ffffff;
-                border: 1.5px solid ;
-                border-color: rgb(13, 124, 13);
-                right: 2rem;
-                transition: all 0.55s ease;
-                opacity: 0;
-                visibility: hidden;
-                transform: translateX(150%);
-                
-    
-                transition: all 0.5s ease;
-              
-              
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            header .navbar .list {
-                display: grid;
-                align-items: center;
-                justify-content: center;
-                
-            }
-            header .navbar .list li{
-                margin: 0;
-            }
-              
-              header .navbar a{
-                font-size: 1rem;
-            display: block;
-              }
-              header ul li a{
-                padding: 10px 0;
-              }
-              .header .navbar.active {
-                opacity: 1;
-                transform: translateX(0%);
-                visibility: visible;
-                transition: all cubic-bezier(0.86,0,0.07);
-              }
-        }
-    @media (max-width: 991px) {
-        #menu-btn{
-         
-          display: block;
-      
-        }
-        html{
-          scroll-behavior: smooth;
-          width:100%
-      }
-        .intro img{
-          width: 100%;
-          height: auto;
-          flex:1 1 .2rem;
-        }
-        .service .service-icon {
-            height:270px;
-        }
-        .intro .content{
-            height: auto;
-            font-size: 20px;
-        }
-        .intro .heading{
-            font-size:30px;
-        } .heading1{
-            font-size: 30px;
-            padding-bottom:2px;
-        }
-        header {
-          padding: 18px 4%;
-        }
-      
-        section {
-          padding: 6rem 4%;
-          width: 100%;
-        }
-        section .container{
-            display: grid;
-            gap:2rem;
-            align-items: center;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 0.5fr));
-            
-        }
-        section.dr-service .icon-service{
-             padding:2rem; 
-            border-radius: 2px;
-            height:180px;
-            width:100%;
-        }
-        section.dr-service .icon-service i{
-            font-size: 30px;
-        }
-
-        .service .service-icon{
-            width:100%;
-        }
-
-        .hospital{
-            width: 100%;
-            }
-            .hospital .img img{
-                width: 100%;
-            }
-            .doctors .box{
-                width:100%;
-            }
-
-            .appointment .input-container {
-                width: 100%;
-                height: auto;
-            }
-            .links .logo2 {
-                    margin-bottom: -30px;
-            }
-        
-          
+    .creator{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        color: var(--main-color);
     }
    
-    @media (max-width: 800px) {
-       
-        html{
-          scroll-behavior: smooth;
-          width:100%
-      }
-        .intro img{
-          width: 100%;
-          height: auto;
-          
-        }
-       
-       header.header label.logo{
-            margin-left:10px;
-        }
-         
-        section.dr-service .icon-service{
-            width:100%;
-        }
-
-        section.dr-service .icon-service i{
-            font-size: 25px;
-        }
-
-        .service .service-icon{
-            width:100%;
-        }
-
-        .hospital{
-            width: 100%;
-            }
-            .hospital{
-                flex-direction: column;
-                }
-            .hospital .img img{
-                width: 100%;
-            }
-            .doctors .box{
-                width:100%;
-            }
-    }
-    @media (max-width: 600px) {
-       
-        html{
-          scroll-behavior: smooth;
-          width:100%
-      }
-      .intro{
-        flex-direction: column;
-      }
-      .links .logo2 {
-        margin-bottom: -15px;
-        font-size: 20px;
-            }
-            .my-footer p{
-                font-size: 10px;
-            }
-        .intro img{
-          width: 100%;
-          height: auto;
-          
-        }
-       
-        
-         
-        section.dr-service .icon-service{
-            width:100%;
-        }
-
-        section.dr-service .icon-service i{
-            font-size: 25px;
-        }
-
-        .service .service-icon{
-            width:100%;
-        }
-
-        .hospital{
-            width: 100%;
-            }
-            .hospital{
-                flex-direction: column;
-                }
-            .hospital .img img{
-                width: 100%;
-            }
-            .doctors .box{
-                width:100%;
-            }
-
-        
-    }

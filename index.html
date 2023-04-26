@@ -10,19 +10,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="css2.css">
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="card.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+     
+  
+      .swiper {
+        width: 100%;
+        height: 60vh;
+        padding: 1rem;
+        
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        
+        
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+       
+        border-radius: 20px;
+      }
+      .swiper-button-next{
+        color: var(--main-color);
+        font-size: 10px;
+      }
+      .swiper-button-prev{
+        color: var(--main-color);
+        font-size: 10px;
+      }
+     
+    </style>
 </head>
 <body>
    
     <header class="header" id="header" >
+        <div id="menu-btn" class="fas fa-bars" onclick="toggleNav()"></div>
         
         <label for="" class="logo">
-            <i class="fas fa-heartbeat"> </i>Galgotias Hospital
+            <a href="#"><img src="ya.png"></a>
         </label>
         
-        <div class="navbar" id="navbar">
+        <div class="navbar" >
             <ul class="list">
                 <li id="search-btn" ><input id="search" placeholder="Search" type="text"><a  href="#" onclick='search_btn()'>&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li class="emergency"><a  href="#avail" ><i class="fa-solid fa-truck-medical"></i>&nbsp;Emergency</a></li>
+                
                 <li><a href="./sign_in.html"><i class="fa-solid fa-user"></i>&nbsp;Sign In</a></li>
                 <!-- <li><a href="#service" class="nav-link-fade-up">Service</a></li>
                 <li><a href="#hospital" class="nav-link-fade-up">About us</a></li>
@@ -33,239 +80,454 @@
                
                 </ul>
             </div>
-            <div id="menu-btn" class="fas fa-bars" onclick="toggleNav()"></div>
+            
+            
+    </header>
+    <header class="ham-header" id="header" >
+        
+        
+        <div class="ham-navbar" id="navbar">
+            <div id="menu-btn2" class="fa-sharp fa-solid fa-arrow-left" onclick="toggleNav()"></div>
+            <label for="" class="logo">
+                <a href="#"><img src="ya.png"></a>
+            </label>
+            <ul class="list">
+                
+                <li><a href="#" class="nav-link-fade-up">Home</a></li>
+                <li><a href="#asan" class="nav-link-fade-up">Yoga Asans</a></li>
+                
+                <li><a href="#yoga-guru" class="nav-link-fade-up">Yoga Guru</a></li>
+                
+                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li> 
+               
+                </ul>
+                <li id="search-btn" ><input id="search" placeholder="Search" type="text"><a  href="#" >&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </div>
+            
             
     </header>
     
     
-    <video muted plays-inline autoplay loop class="back-video">
-        <source src="./hospital.mp4" type="video/mp4">
+    <video  muted plays-inline autoplay loop class="back-video">
+        <source src="./The-Flow.mp4" type="video/mp4">
     </video>
     <section class="find">
         <div class="finding">
-            <h1>WHAT MAKES US BETTER, MAKES YOU BETTER.</h1>
+            <h1>Yoga is a gift to keep you fit.</h1>
             <div class="find-btn">
-                <a href="" class="h-btn">Find Doctors</a>
-                <a href="" class="h-btn">Book Appointment</a>
+                <a href="" class="h-btn ">Explore</a>
+                
             </div>
         </div>
     </section>
+    <!-- Link Swiper's CSS -->
+ 
+
+
+
+
+
+
+  
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
     
-    <div class="diff-navi">
-        <div class="navi" >
-            <ul class="list">
-                
-                <li><a href="#service" class="nav-link-fade-up">Service</a></li>
-                <li><a href="#hospital" class="nav-link-fade-up">About us</a></li>
-                
-                <li><a href="#doctors" class="nav-link-fade-up">Doctors</a></li>
-                <li><a href="#appointment" class="nav-link-fade-up">Appointment</a></li>
-                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li> 
-               
-                </ul>
-                </div>
+<section class="home">
+    <h1>Our Yoga Academy</h1>
+    <div class="ruler"></div>
+    <div class="text-content">
+        <p>This Yoga academy is a training center that provides yoga education and certification to individuals who are interested in learning and practicing yoga. These academies may offer a variety of yoga styles, such as Hatha, Vinyasa, Ashtanga, Iyengar, and more.
+
+            Yoga academies typically offer different types of programs, ranging from short courses to comprehensive teacher training programs that last for several months or years. The curriculum of a yoga academy generally includes the philosophy, history, and practices of yoga, as well as anatomy and physiology, meditation, pranayama (breathing techniques), and yoga teaching methodology.</p>
     </div>
+</section>
+
+
+<div class="dot-circe">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+<!-- Facts of yoga -->
+<section class="benefits">
+  <div class="yoga-facts">
+    <div class="image">
+      <img src="./images2/meditation.png">
+    </div>
+    <div class="text-content">
+      <h1>Benefits of Yoga</h1>
+      <div class="ruler"></div>
+      <ul>
+        <li><p>Wake up Energized</p></li>
+        <li><p>Find Calm</p></li>
+        <li><p>Build Strength</p></li>
+        <li><p>Sharpen Focus</p></li>
+        <li><p>Sleep Soundly</p></li>
+        <li><p>Increase Flexibility</p></li>
+        <li><p>Support Longevity</p></li>
+      </ul>
+    
+    </div>
+  </div>
+</section>
+
+<!-- Circle ruler -->
+<div class="dot-circe">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+
+<!-- History -->
+<section class="history">
+  <div class="yoga-history">
+    
+      <h1>History of Yoga</h1>
+      <div class="ruler"></div>
+      <div class="text-content">
+        <p>The beginnings of Yoga were developed by the Indus-Sarasvati civilization in Northern India over 5,000 years ago. The word yoga was first mentioned in the oldest sacred texts, the Rig Veda. The Vedas were a collection of texts containing songs, mantras and rituals to be used by Brahmans, the Vedic priests. Yoga was slowly refined and developed by the Brahmans and Rishis (mystic seers) who documented their practices and beliefs in the upanishads, a huge work containing over 200 scriptures. </p>
+      </div>
+      
+    </div>
+
+    <div class="image">
+      <img src="./images2/yoga-pose.png">
+    </div>
+   
+  </div>
+</section>
+
+<!-- Circle ruler -->
+<div class="dot-circe">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+<!-- 21st -->
+<section class="international">
+  <div class="yoga-day">
+    <div class="image">
+      <img src="./images2/international.png">
+    </div>
+
+      
+      <div class="text-content">
+        <h1>International Yoga Day</h1>
+      <div class="ruler"></div>
+        <p>Yoga is a trend that has been flourishing over the years; rather, it has become a trendsetter in maintaining physical and mental well-being. Each Yogic activity is a key to improving flexibility, strength, balance, and harmony. Yoga Portal is a platform to help people embrace, practice, and enjoy yoga daily. It is a perfect gateway to search for the best Yoga resources, Common Yoga Protocol training videos, Yoga Research, Yoga Centres, and the latest Yoga events to participate in. </p>
+      </div>
+      
+    </div>
+</section>
+
+<!-- Circle ruler -->
+<div class="dot-circe">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+<!-- Gurus -->
+
+<section class="guru-cards" id="yoga-guru">
+
+  <div class="head">
+    <h1>Our Yoga Guru</h1>
+    <div class="ruler"></div>
+  </div>  
+   
+    <div class="yoga-guru">
+      <div class="card">
+        <div class="poster">
+            <img src="./cards/p1.png" alt="">
+        </div>
+        <div class="details">
+            <h3>Shri Yogendra ji</h3>
+            <p>1897 - 1989</p>
+            <div class="info">
+                <p>Shri Yogendra Ji laid down the foundation of The Yoga Institute, 
+                    the oldest organized yoga center in the world, in 1918. He is 
+                    the architect of the evolution of Yoga that has happened in the 
+                    world in the last 100 years. </p>
+            </div>
+        </div>    
+    </div>
+
+    <div class="card">
+        <div class="poster">
+            <img src="./cards/p2.png" alt="" id="p2">
+        </div>
+        <div class="details">
+            <h3>Baba Ramdev</h3>
+            <p>Born 1965</p>
+            <div class="info">
+                <p>Baba Ramdev is an Indian spiritual leader and a renowned yoga teacher. He 
+                  is famous for popularizing yoga among Indians through the medium of 
+                  television and his mass yoga camps. ......................</p>
+            </div>
+        </div>    
+    </div>
+
+    <div class="card">
+        <div class="poster">
+            <img src="./cards/p3.png" alt="">
+        </div>
+        <div class="details">
+            <h3>Dr. Hansaji Yogendra</h3>
+            <p>Born 1947</p>
+            <div class="info">
+                <p>Dr. Hansaji Yogendra is a globally acclaimed Spiritual Yoga Guru and the 
+                  Director of The Yoga Institute, Mumbai. She is a mentor and role model to 
+                  millions of lives and has conducted more than 50,000 powerful sessions. </p>
+            </div>
+        </div>    
+    </div>
+
+    <div class="card">
+        <div class="poster">
+            <img src="./cards/p4.png" alt="">
+        </div>
+        <div class="details">
+            <h3>Dr. Jayadeva Yogendra</h3>
+            <p>Director 1947</p>
+            <div class="info">
+                <p>Dr. Jayadeva Yogendra, fondly known as Dr. Sahab, was a true yogi who 
+                  showed the world how to live a balanced and a perfect yogic life. He 
+                  served as the President of The Yoga Institute and continued his father’s 
+                  legacy.  </p>
+            </div>
+        </div>    
+    </div>
+
+    <div class="card">
+        <div class="poster">
+            <img src="./cards/p5.png" alt="">
+        </div>
+        <div class="details">
+            <h3>Shri Yogendra ji</h3>
+            <p>1929 - 2018</p>
+            <div class="info">
+                <p>Jaggi Vasudev, often referred to as ‘Sadhguru’ is an Indian yogi and 
+                  mystic who founded the ‘Isha Foundation,’ a non-profit organization which 
+                  offers yoga programs around the world. .............. </p>
+            </div>
+        </div>    
+    </div>
+    <div class="card">
+      <div class="poster">
+          <img src="./cards/p6.png" alt="">
+      </div>
+      <div class="details">
+          <h3>Tirumalai Krishnamacharya</h3>
+          <p>(1888-1989)</p>
+          <div class="info">
+              <p>Tirumalai Krishnamacharya  one of India’s most respected 
+                authorities on the Vedic tradition and Yoga teachings and practice. 
+                Krishnamacharya was probably the first Yoga Master to introduce the concept 
+                of “Vinyasa”.</p>
+          </div>
+      </div>    
+  </div>
+   
+    </div>
+   
+</section>
+
+<!-- Circle ruler -->
+<div class="dot-circe">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+
+
+<!-- Poses -->
+<section class="Asans" id="asan">
+  <div class="heading">
+    <h1>Yoga Asans</h1>
+    <div class="ruler"></div>
+  </div> 
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="main">
+          <img src="./poses/p1.png" alt="">
+          <h3>Padmasana</h3>
+        </div>
+        <p>It is often used for meditation and breathing exercises. In this pose, each foot is placed on the opposite thigh, creating a stable and comfortable seated position. </p>
+        
+      </div>
+      <div class="swiper-slide">
+        <div class="main">
+          <img src="./poses/p2.png" alt="">
+          <h3>Utthita Trikonasana</h3>
+        </div>
+        <p>using a yoga block for your bottom hand if you aren't comfortable reaching your arm to the floor. You can also rest your hand higher up on your leg—on your shin or thigh</p>
+        
+      </div>
+      <div class="swiper-slide">
+        <div class="main">
+          <img src="./poses/p3.png" alt="">
+          <h3>Setu Bandhasana </h3>
+        </div>
+        <p>Setu Bandhasana is a yoga pose where the body is positioned in a bridge shape supported by the arms, legs and back. It is considered to be an intermediate-level posture and provides numerous physical and mental benefits.</p>
+        
+      </div>
+      <div class="swiper-slide">
+        <div class="main">
+          <img src="./poses/p4.png" alt="">
+          <h3>Utkatasana</h3>
+        </div>
+        <p>Utkatasana or Chair Pose, is a strengthening yoga posture that targets the muscles of the legs, back, and core. The knees are bent, and the hips are lowered, as if sitting in an imaginary chair in this pose with the arms raised overhead to complete it.</p>
+        
+      </div>
+      <div class="swiper-slide">
+        <div class="main">
+          <img src="./poses/p5.png" alt="">
+          <h3>Naukasana</h3>
+        </div>
+        <p>Naukasana is a variation of yoga poses for beginners in which our body takes the shape of a boat. It makes the circulation of blood and oxygen around the abdomen and lowers back time much faster. </p>
+        
+      </div>
+      <div class="swiper-slide">
+        <div class="main">
+          <img src="./poses/p6.png" alt="">
+          <h3>Urdhva Mukha Svanasana</h3>
+        </div>
+        <p>The Upward Facing Dog Pose is where the person starts in a prone yoga position, touching their belly to the floor and then lifts their chest and legs off the ground while keeping their arms extended. </p>
+        
+      </div>
+     
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  
+</section>
+
+<!-- Circle ruler -->
+<div class="dot-circe">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+<!-- Our experience with Leaders -->
+<section class="experience">
+  <div class="heading">
+    <h1>Leaders on Yoga</h1>
+    <div class="ruler"></div>
+  </div>
+
+  
+ 
+        <div class="exp-container">
+          <div class="detail-box">
+            <h3>Shri Narendra Modi</h3>
+            <h5>Primer Minister of India</h5>
+            <p>“Yoga is an invaluable gift of India’s ancient tradition. It embodies unity of mind and body; thought and action; restraint and fulfilment; harmony between man and nature; a holistic approach to health and wellbeing. It is not about exercise but to discover a sense of oneness with yourself, the world, and nature."</p>
+          </div>
+          <div class="deatil-img">
+            <img src="./exp-image/modi.png" alt="">
+          </div>
+        </div>
+      
+
+      
+        <div class="exp-container">
+          <div class="detail-box">
+            <h3>Smt. Droupadi Murmu</h3>
+            <h5>President of India</h5>
+            <p>“Prevention is better than cure for a healthy life. If we remain ‘Yog-yukt’ (associated with Yoga), we can remain ‘Rog-mukt’ (free from diseases). Through yoga, we can attain a healthy body and a peaceful mind,”</p>
+          </div>
+          <div class="deatil-img">
+            <img src="./exp-image/president.png" alt="">
+          </div>
+        </div>
+     
+
+      
+        <div class="exp-container">
+          <div class="detail-box">
+            <h3>Jagdeep Dhankhar</h3>
+            <h5>Vice-president of India</h5>
+            <p>Yoga has no barrier of age, caste, religion and regions, it is universal, Work for not just transforming our minds and bodies but also the overall transformation of the nation,</p>
+          </div>
+          <div class="deatil-img">
+            <img src="./exp-image/dhankar.png" alt="">
+          </div>
+        </div>
+      
+
+     
+        
+        
+    
+  
+ 
+</section> 
+
+
+
+
+
+
+
     <!--               -->
     <!--               -->
-    <section class="intro" id="home" >
-        <div class="img">
-            <img src="image/home-img.svg" alt="">
-        </div>
-        <div class="content">
-            <h1 class="heading1">Stay Safe Stay Healthy</h1>
-            <p>Galgotia's Hospital is a well-known hospital located in Greater Noida, India. The hospital is known for its excellent medical facilities, state-of-the-art infrastructure, and highly trained medical staff. </p>
-            <div class="btn1">
-                <button type="button" class="btn" onclick="call()">Contact us</button>
-            </div>
-            
-        </div>
-    </section>
-    <!--  -------------------- -->
-    <!-- ---------------------- -->
-
-    <section class="dr-service" id="avail" style="background-color: #f1f1f1;">
-        <h1 class="heading" id="h1">Availability</h1>
-        <div class="container">
-            <div class="icon-service">
-                <i class="fas fa-user-md"></i>
-                <h3>140+</h3>
-                <p>At Work</p>
-            </div>
-            <div class="icon-service">
-                <i class="fas fa-user"></i>
-                <h3>1040+</h3>
-                <p>Satisfied Patients</p>
-            </div>
-            <div class="icon-service">
-                <i class="fas fa-procedures"></i>
-                <h3>500+</h3>
-                <p>Bed Facility</p>
-            </div>
-            <div class="icon-service">
-                <i class="fas fa-ambulance"></i>
-                <h3>200+</h3>
-                <p> Ambulance</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------- -->
-    <!-- ----------- -->
-    <section class="service" id="service">
-        <h1 class="heading">Services</h1>
-        <div class="container2">
-            <div class="service-icon">
-                <i class="fas fa-pump-medical"></i>
-                <h3>Free Check-up</h3>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="service-icon">
-                <i class="fas fa-ambulance"></i>
-                <h3>24/7 Ambulance</h3>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="service-icon">
-                <i class="fas fa-pills"></i>
-                <h3>Medicine</h3>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet .</p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="service-icon">
-                <i class="fas fa-stethoscope"></i>
-                <h3>Emergency</h3>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="service-icon">
-                <i class="fas fa-procedures"></i>
-                <h3>Bed Facility</h3>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="service-icon">
-                <i class="fas fa-prescription"></i>
-                <h3>24/7 Experts</h3>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-        </div>
-        
-    </section>
-    <!-- ------------ -->
-    <!-- ------------ -->
-
-    <section class="about-hos" id="hospital" style="background-color: #f1f1f1;">
-        <h1 class="heading">About us</h1>
-        <div class="hospital">
-            <div class="img">
-                <img src="image/about-img.svg" alt="">
-            </div>
-            <div class="content">
-                <h1 class="abt-head">We'll take care of your Health</h1>
-                <p>Galgotias Hospital is a multi-specialty hospital located in Greater Noida, Uttar Pradesh, India. The hospital provides a wide range of medical services, including cardiology, neurology, orthopedics, gastroenterology, and oncology, among others. </p>
-                    <p>
-The hospital has a team of highly qualified and experienced doctors, nurses, and other medical staff. In addition, the hospital also offers various facilities such as 24-hour emergency services, pharmacy, laboratory, radiology, and blood bank, among others. 
-                    </p>
-                
-                
-            </div>
-        </div>
-       
-    </section>
-    <!-- ---------------- -->
-    <!-- ---------------- -->
-
-    <section class="doctors" id="doctors">
-        <h1 class="heading">Our Doctors</h1>
-        <div class="doctor-container">
-            <div class="box">
-                <img src="image/doctor1.jpg" alt="">
-                <h3>Dr. S C Rajendran</h3>
-                <p>Dermatologist  </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="box">
-                <img src="image/doctor2.jpg" alt="">
-                <h3>Dr. M G Gopal</h3>
-                <p>Gastroenterologist </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="box">
-                <img src="image/doctor3.jpg" alt="">
-                <h3>Dr. Uma Rai
-                    </h3>
-                <p>
-                    Gynecologist/Obstetrician  </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="box">
-                <img src="image/doctor4.jpg" alt="">
-                <h3>Dr. Rajendra 
-                   </h3>
-                <p>General Physician</p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="box">
-                <img src="image/doctor5.jpg" alt="">
-                <h3>Dr. Ajay Kumar</h3>
-                <p>Gastroenterologist </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-            <div class="box">
-                <img src="image/doctor6.jpg" alt="">
-                <h3>Dr. Rajiv Agarwal</h3>
-                <p>Cardiologist </p>
-                <button type="button" class="btn">Know more</button>
-            </div>
-        </div>
-        
-    </section>
-    <!-- ------------- -->
-    <!-- -------------- -->
-
-    <section class="appointment" style="background-color: #f1f1f1;" id="appointment">
-        <h1 class="heading">Book Appointment</h1>
-        <div class="input-container">
-            <form>
-                <div class="form-container">
-                    
-                </div>
-                <h3>Patient Information:</h3>
-                <label for="fullname">Full Name:</label>
-                <input placeholder="" type="text" id="fullname" name="fullname" required>
-        
-                <label for="dob">Date of Birth:</label>
-                <input type="date" placeholder="" id="dob" name="dob" required>
-        
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="" disabled selected>Select Gender</option>
-                    <option value="male" >Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-        
-                <label for="address">Address:</label>
-                <textarea id="address"  name="address" required></textarea>
-        
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" placeholder="+91-...." name="phone" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="" name="email" required>
-        
-                
-        
-                
-                <div class="sub-">
-                    <input type="submit" value="Submit" class="submit" onclick="submit()">
-                </div>
-                
-            </form>
-        </div>
-    </section>
+   
         <!-- ----------------- -->
         <!-- ----------------- -->
 
@@ -274,52 +536,117 @@ The hospital has a team of highly qualified and experienced doctors, nurses, and
                 <div class="box">
                     <h3>Quick links</h3>
                     <a href="#home"> <i class="fas fa-chevron-right"></i> Home </a>
-                    <a href="#avail"> <i class="fas fa-chevron-right"></i> Availability </a>
-                    <a href="#services"> <i class="fas fa-chevron-right"></i> Services </a>
+                    <a href="#asan"> <i class="fas fa-chevron-right"></i> Yoga Asans </a>
+                    <a href="#yoga-guru"> <i class="fas fa-chevron-right"></i> Yoga Guru </a>
                     <a href="#hospital"> <i class="fas fa-chevron-right"></i> About us </a>
-                    <a href="#doctors"> <i class="fas fa-chevron-right"></i> Doctors </a>
-                    <a href="#appointment"> <i class="fas fa-chevron-right"></i> Appointment</a>
-                    <a href="#"> <i class="fas fa-chevron-right"></i> Contact us</a>
+                    
+                    
                 </div>
-                <div class="box">
-                    <h3>Our services</h3>
-                    <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
-                    <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
-                    <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
-                    <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
-                    <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
-                </div>
+                
                 <div class="box">
                     <h3>contact info</h3>
                     <a href="#"> <i class="fas fa-phone"></i> +91-------- </a>
                     <a href="#"> <i class="fas fa-phone"></i> +91----------- </a>
                 
-                    <a href="#"> <i class="fas fa-envelope"></i> galgotia@gmail.com </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> yogaacademy@gmail.com </a>
                     <a href="#"> <i class="fas fa-map-marker-alt"></i> Greater Noida, 212144</a>
                 </div>
                 <div class="box">
                     <h3>Follow us</h3>
                     <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
             <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            
             <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
             <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            
                 </div>
             </div>
-            <h1 for="" class="logo2">
-                <i class="fas fa-heartbeat"> </i>&nbsp;&nbsp;Galgotias Hospital
-            </h1>
+           
         </section>
+        <div class="creator">
+          <span>Developed by Shailesh Attri &nbsp;|</span>  
+          <span> &nbsp;University Project &nbsp;| </span>
+          <span> &nbsp;Other Members : Nitish Kumar & Krishan Kant Tiwari&nbsp;| </span>
+          <span> &nbsp;All Rights Reserved</span></div>
 
-        <!-- --------- -->
-        <!-- --------- -->
-        <footer class="my-footer">
+      
+       
+
+        
+        <!-- <footer class="my-footer">
             <div class="footer">
                 <p>Created by Shailesh Attri | All rights reserved </p>
             </div>
-        </footer>
+        </footer> -->
         
         <script src="script.js"></script>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="swiper.js"></script>
+</body> 
 </html>
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    .heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+
+
+    .swiper {
+      width: 100%;
+      height: 500px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      padding: 1rem;
+      background-color: transparent;
+      border: 2px solid var(--main-color);
+      width: 300px;
+      height: 400px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+    .swiper-slide .main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+    .swiper-slide .main img{
+      width: 150px;
+      height: auto;
+    }
+    .swiper-slide p{
+      margin-top: 1.5rem;
+      font-size: 15px;
+    }
+
+    
+  </style>
+
+
+
+  <!-- Swiper -->
+ 
+
+
+
+
+
+
+  
