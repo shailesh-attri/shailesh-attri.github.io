@@ -227,6 +227,48 @@
         
     }
 }
+@media (max-width:460px){
+    .benefits .yoga-facts {
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+    .benefits .text-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .history{
+        grid-template-columns: 100%;
+    }
+    .international .yoga-day {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+        align-items: center;
+    }
+    .international .yoga-day .text-content{
+        order: 1;
+    }
+    header .ham-navbar {
+        height: 110vh;
+    }
+    .exp-container{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 1rem 0;
+    }
+    section .all-container{
+        display: grid;
+        grid-template-columns:100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 @media (max-width:410px){
     .benefits .yoga-facts {
         display: grid;
