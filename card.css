@@ -112,6 +112,9 @@
    }
 
    @media (max-width:1300px){
+    section{
+        width: 100%;
+    }
      .guru-cards{
         width: 100%;
      }
@@ -120,10 +123,148 @@
      }
    } 
    @media (max-width:1150px){
+    
+    
     .guru-cards{
        width: 100%;
     }
     .yoga-guru{
        width: 100%;
+       column-gap: 4rem;
+    }
+    .ham-navbar .list{
+        margin: 7rem 0
     }
   } 
+  @media (max-width:1080px){
+    section{
+        width: 100%;
+    }
+    .guru-cards{
+        width: 100%;
+     }
+     .yoga-guru{
+        width: 100%;
+     }
+     
+    
+  }
+@media (max-width:998px){
+    section{
+        width: 100%;
+        
+    }
+    .guru-cards{
+        width: 100%;
+     }
+     .yoga-guru{
+        width: 100%;
+     }
+     .home .text-content {
+        padding: 2rem 6rem;
+     }
+     
+}
+@media (max-width:800px){
+    .international .text-content p {
+        padding: 0px 0.5rem;
+    }
+    .creator{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:660px){
+    section {
+        
+        padding-bottom: 8rem;
+        width: 100%;
+    }
+    .yoga-history p {
+        padding: 0 1rem;
+    }
+    .history img{
+        width: 80%;
+    }
+    
+    .exp-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+@media (max-width:560px){
+    header .navbar{
+        display: none;
+    }
+    #sign-in{
+        display: block;
+    }
+    .sign-back-btn{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    header .ham-navbar .list {
+        padding: 0rem 0;
+        
+    }
+    ham-navbar .list {
+        margin: 5rem 0;
+    }
+    .home .text-content {
+        padding: 2rem 2rem;
+    }
+    .benefits .yoga-facts img {
+        width: 80%;
+        height: auto;
+    }
+    .benefits .yoga-facts {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+}
+@media (max-width:410px){
+    .benefits .yoga-facts {
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+    .benefits .text-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .history{
+        grid-template-columns: 100%;
+    }
+    .international .yoga-day {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+        align-items: center;
+    }
+    .international .yoga-day .text-content{
+        order: 1;
+    }
+    header .ham-navbar {
+        height: 110vh;
+    }
+    .exp-container{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 1rem 0;
+    }
+    section .all-container{
+        display: grid;
+        grid-template-columns:100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

@@ -67,16 +67,11 @@
         </label>
         
         <div class="navbar" >
-            <ul class="list">
+            <ul class="list" id="sign-in-2">
                 <li id="search-btn" ><input id="search" placeholder="Search" type="text"><a  href="#" onclick='search_btn()'>&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a></li>
                 
-                <li><a href="./sign_in.html"><i class="fa-solid fa-user"></i>&nbsp;Sign In</a></li>
-                <!-- <li><a href="#service" class="nav-link-fade-up">Service</a></li>
-                <li><a href="#hospital" class="nav-link-fade-up">About us</a></li>
+                <li id="header-sign-in"><a href="./sign_in.html"><i class="fa-solid fa-user"></i>&nbsp;Sign In</a></li>
                 
-                <li><a href="#doctors" class="nav-link-fade-up">Doctors</a></li>
-                <li><a href="#appointment" class="nav-link-fade-up">Appointment</a></li>
-                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li> --> 
                
                 </ul>
             </div>
@@ -87,7 +82,13 @@
         
         
         <div class="ham-navbar" id="navbar">
-            <div id="menu-btn2" class="fa-sharp fa-solid fa-arrow-left" onclick="toggleNav()"></div>
+          <div class="sign-back-btn">
+            <a id="sign-in" href="./sign_in.html"><i class="fa-solid fa-user"></i>&nbsp;Sign In</a></li>
+            <a id="menu-btn2" class="fa-sharp fa-solid fa-arrow-left" onclick="toggleNav()"></a>
+          </div>
+          
+            
+      
             <label for="" class="logo">
                 <a href="#"><img src="ya.png"></a>
             </label>
@@ -101,8 +102,12 @@
                 <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li> 
                
                 </ul>
-                <li id="search-btn" ><input id="search" placeholder="Search" type="text"><a  href="#" >&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a></li>
-            </div>
+                <div class="s-btn">
+                  <div id="search-btn" ><input id="search" placeholder="Search" type="text">
+                    <a  href="#" >&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a>
+                  </div>
+                </div>
+          </div>
             
             
     </header>
@@ -567,7 +572,8 @@
           <span>Developed by Shailesh Attri &nbsp;|</span>  
           <span> &nbsp;University Project &nbsp;| </span>
           <span> &nbsp;Other Members : Nitish Kumar & Krishan Kant Tiwari&nbsp;| </span>
-          <span> &nbsp;All Rights Reserved</span></div>
+          <span> &nbsp;All Rights Reserved</span>
+        </div>
 
       
        

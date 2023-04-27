@@ -19,10 +19,11 @@
 
   /* Cards */
   .guru-cards .yoga-guru{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
+    text-align: center;
     gap: 4rem;
   }
   .guru-cards .head{
