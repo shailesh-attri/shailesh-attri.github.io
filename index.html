@@ -1,658 +1,716 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga Academy</title>
-   
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="css2.css">
-  <link rel="stylesheet" href="swiper.css">
-  <link rel="stylesheet" href="card.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="overlay overlay-lg">
+          <img src="./img/shapes/square.png" class="shape square" alt="" />
+          <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle1"
+            alt=""
+          />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle2"
+            alt=""
+          />
+          <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
+          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
+          <img src="./img/shapes/letters.png" class="letters" alt="" />
+          <img src="./img/shapes/points1.png" class="points points1" alt="" />
+        </div>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-    <!-- Demo styles -->
-    <style>
-     
-  
-      .swiper {
-        width: 100%;
-        height: 60vh;
-        padding: 1rem;
-        
-      }
-  
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        
-        
-      }
-  
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-       
-        border-radius: 20px;
-      }
-      .swiper-button-next{
-        color: var(--main-color);
-        font-size: 10px;
-      }
-      .swiper-button-prev{
-        color: var(--main-color);
-        font-size: 10px;
-      }
-     
-    </style>
-</head>
-<body>
-   
-    <header class="header" id="header" >
-        <div id="menu-btn" class="fas fa-bars" onclick="toggleNav()"></div>
-        
-        <label for="" class="logo">
-            <a href="#"><img src="ya.png"></a>
-        </label>
-        
-        <div class="navbar" >
-            <ul class="list" id="sign-in-2">
-                <li id="search-btn" ><input id="search" placeholder="Search" type="text"><a  href="#" onclick='search_btn()'>&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a></li>
-                
-                <li id="header-sign-in"><a href="./sign_in.html"><i class="fa-solid fa-user"></i>&nbsp;Sign In</a></li>
-                
-               
-                </ul>
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <label for="">Shailesh Attri</label>
             </div>
-            
-            
-    </header>
-    <header class="ham-header" id="header" >
-        
-        
-        <div class="ham-navbar" id="navbar">
-          <div class="sign-back-btn">
-            <a id="sign-in" href="./sign_in.html"><i class="fa-solid fa-user"></i>&nbsp;Sign In</a></li>
-            <a id="menu-btn2" class="fa-sharp fa-solid fa-arrow-left" onclick="toggleNav()"></a>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a href="#hireme" class="active">Hire me</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
           </div>
-          
-            
-      
-            <label for="" class="logo">
-                <a href="#"><img src="ya.png"></a>
-            </label>
-            <ul class="list">
-                
-                <li><a href="#home" class="nav-link-fade-up">Home</a></li>
-                <li><a href="#asan" class="nav-link-fade-up">Yoga Asans</a></li>
-                
-                <li><a href="#yoga-guru" class="nav-link-fade-up">Yoga Guru</a></li>
-                
-                <li><a href="#contact-us" class="nav-link-fade-up">Contact</a></li> 
-               
-                </ul>
-                <div class="s-btn">
-                  <div id="search-btn" ><input id="search" placeholder="Search" type="text">
-                    <a  href="#" >&nbsp;<i class="fa-solid fa-magnifying-glass"></i></a>
+        </nav>
+
+        <div class="header-content">
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title">Shailesh Attri</h1>
+              <p class="text">
+                Hello, I'm Shailesh Attri, web design and developer. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Totam magni sit
+                hic!
+              </p>
+              <a href="#" class="btn">Download CV</a>
+            </div>
+
+            <div class="column-2 image">
+              <img
+                src="./img/shapes/points2.png"
+                class="points points2"
+                alt=""
+              />
+              <img src="./img/passport pic.png" class="img-element z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What I Do">Services</h3>
+            <p class="text">
+              I am a passionate and experienced web developer specializing in creating modern and responsive websites. With a strong foundation in front-end and back-end technologies, I am dedicated to crafting seamless digital experiences that align with my clients' goals.
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                class="points points1 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="UI/UX">
+                <div class="card-content z-index">
+                  <img src="./img/design-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Web Design</h3>
+                  <p class="text">
+                    n today's mobile-centric world, responsive design is a must. I create websites that adapt gracefully to various screen sizes and devices, ensuring a consistent and enjoyable experience for users.
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="Code">
+                <div class="card-content z-index">
+                  <img src="./img/code-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Web Development</h3>
+                  <p class="text">
+                    I offer bespoke website development services tailored to your unique requirements. Whether you need a corporate website, e-commerce platform, or personal blog.
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                class="points points2 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="App">
+                <div class="card-content z-index">
+                  <img src="./img/app-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">React Web App Development</h3>
+                  <p class="text">
+                    I am a skilled and innovative React web app developer with a passion for creating dynamic and interactive web applications. With a deep understanding of modern web development 
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="background-bg">
+          <div class="overlay overlay-sm">
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle1"
+              alt=""
+            />
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle2"
+              alt=""
+            />
+            <img src="./img/shapes/square.png" class="shape square" alt="" />
+            <img src="./img/shapes/wave.png" class="shape wave" alt="" />
+            <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+            <img
+              src="./img/shapes/triangle.png"
+              class="shape triangle"
+              alt=""
+            />
+            <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="My works">Portfolio</h3>
+          </div>
+
+          <div class="section-body">
+            <div class="filter">
+              <button class="filter-btn active" data-filter="*">All</button>
+              <button class="filter-btn" data-filter=".ui">UI/UX</button>
+              <button class="filter-btn" data-filter=".webdev">Web Dev</button>
+              <button class="filter-btn" data-filter=".appdev">
+                Mobile App
+              </button>
+              <button class="filter-btn" data-filter=".logo-design">
+                Logo Design
+              </button>
+            </div>
+
+            <div class="grid">
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port1.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
                   </div>
                 </div>
-          </div>
-            
-            
-    </header>
-    
-    
-    <video  muted plays-inline autoplay loop class="back-video">
-        <source src="./The-Flow.mp4" type="video/mp4">
-    </video>
-    <section class="find">
-        <div class="finding">
-            <h1>Yoga is a gift to keep you fit.</h1>
-            <div class="find-btn">
-                <a href="#home" class="h-btn ">Explore</a>
-                
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port2.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Development</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port3.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port4.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>UI / UX Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port5.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port6.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>App Development</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port7.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item appdev ui">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port8.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>App Development</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/port9.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
-    <!-- Link Swiper's CSS -->
- 
-
-
-
-
-
-
-  
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-    
-<section class="home" id="home">
-    <h1>Our Yoga Academy</h1>
-    <div class="ruler"></div>
-    <div class="text-content">
-        <p>This Yoga academy is a training center that provides yoga education and certification to individuals who are interested in learning and practicing yoga. These academies may offer a variety of yoga styles, such as Hatha, Vinyasa, Ashtanga, Iyengar, and more.
-
-            Yoga academies typically offer different types of programs, ranging from short courses to comprehensive teacher training programs that last for several months or years. The curriculum of a yoga academy generally includes the philosophy, history, and practices of yoga, as well as anatomy and physiology, meditation, pranayama (breathing techniques), and yoga teaching methodology.</p>
-    </div>
-</section>
-
-
-<div class="dot-circe">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
-
-<!-- Facts of yoga -->
-<section class="benefits">
-  <div class="yoga-facts">
-    <div class="image">
-      <img src="./images2/meditation.png">
-    </div>
-    <div class="text-content">
-      <h1>Benefits of Yoga</h1>
-      <div class="ruler"></div>
-      <ul>
-        <li><p>Wake up Energized</p></li>
-        <li><p>Find Calm</p></li>
-        <li><p>Build Strength</p></li>
-        <li><p>Sharpen Focus</p></li>
-        <li><p>Sleep Soundly</p></li>
-        <li><p>Increase Flexibility</p></li>
-        <li><p>Support Longevity</p></li>
-      </ul>
-    
-    </div>
-  </div>
-</section>
-
-<!-- Circle ruler -->
-<div class="dot-circe">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
-
-
-
-<!-- History -->
-<section class="history">
-  <div class="yoga-history">
-    
-      <h1>History of Yoga</h1>
-      <div class="ruler"></div>
-      <div class="text-content">
-        <p>The beginnings of Yoga were developed by the Indus-Sarasvati civilization in Northern India over 5,000 years ago. The word yoga was first mentioned in the oldest sacred texts, the Rig Veda. The Vedas were a collection of texts containing songs, mantras and rituals to be used by Brahmans, the Vedic priests. Yoga was slowly refined and developed by the Brahmans and Rishis (mystic seers) who documented their practices and beliefs in the upanishads, a huge work containing over 200 scriptures. </p>
-      </div>
-      
-    </div>
-
-    <div class="image">
-      <img src="./images2/yoga-pose.png">
-    </div>
-   
-  </div>
-</section>
-
-<!-- Circle ruler -->
-<div class="dot-circe">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
-
-
-<!-- 21st -->
-<section class="international">
-  <div class="yoga-day">
-    <div class="image">
-      <img src="./images2/international.png">
-    </div>
-
-      
-      <div class="text-content">
-        <h1>International Yoga Day</h1>
-      <div class="ruler"></div>
-        <p>Yoga is a trend that has been flourishing over the years; rather, it has become a trendsetter in maintaining physical and mental well-being. Each Yogic activity is a key to improving flexibility, strength, balance, and harmony. Yoga Portal is a platform to help people embrace, practice, and enjoy yoga daily. It is a perfect gateway to search for the best Yoga resources, Common Yoga Protocol training videos, Yoga Research, Yoga Centres, and the latest Yoga events to participate in. </p>
-      </div>
-      
-    </div>
-</section>
-
-<!-- Circle ruler -->
-<div class="dot-circe">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
-
-
-<!-- Gurus -->
-
-<section class="guru-cards" id="yoga-guru">
-
-  <div class="head">
-    <h1>Our Yoga Guru</h1>
-    <div class="ruler"></div>
-  </div>  
-   
-    <div class="yoga-guru">
-      <div class="card">
-        <div class="poster">
-            <img src="./cards/p1.png" alt="">
-        </div>
-        <div class="details">
-            <h3>Shri Yogendra ji</h3>
-            <p>1897 - 1989</p>
-            <div class="info">
-                <p>Shri Yogendra Ji laid down the foundation of The Yoga Institute, 
-                    the oldest organized yoga center in the world, in 1918. He is 
-                    the architect of the evolution of Yoga that has happened in the 
-                    world in the last 100 years. </p>
+            <div class="more-folio">
+              <a href="#" class="btn">More Folio</a>
             </div>
-        </div>    
-    </div>
-
-    <div class="card">
-        <div class="poster">
-            <img src="./cards/p2.png" alt="" id="p2">
-        </div>
-        <div class="details">
-            <h3>Baba Ramdev</h3>
-            <p>Born 1965</p>
-            <div class="info">
-                <p>Baba Ramdev is an Indian spiritual leader and a renowned yoga teacher. He 
-                  is famous for popularizing yoga among Indians through the medium of 
-                  television and his mass yoga camps. ......................</p>
-            </div>
-        </div>    
-    </div>
-
-    <div class="card">
-        <div class="poster">
-            <img src="./cards/p3.png" alt="">
-        </div>
-        <div class="details">
-            <h3>Dr. Hansaji Yogendra</h3>
-            <p>Born 1947</p>
-            <div class="info">
-                <p>Dr. Hansaji Yogendra is a globally acclaimed Spiritual Yoga Guru and the 
-                  Director of The Yoga Institute, Mumbai. She is a mentor and role model to 
-                  millions of lives and has conducted more than 50,000 powerful sessions. </p>
-            </div>
-        </div>    
-    </div>
-
-    <div class="card">
-        <div class="poster">
-            <img src="./cards/p4.png" alt="">
-        </div>
-        <div class="details">
-            <h3>Dr. Jayadeva Yogendra</h3>
-            <p>Director 1947</p>
-            <div class="info">
-                <p>Dr. Jayadeva Yogendra, fondly known as Dr. Sahab, was a true yogi who 
-                  showed the world how to live a balanced and a perfect yogic life. He 
-                  served as the President of The Yoga Institute and continued his father’s 
-                  legacy.  </p>
-            </div>
-        </div>    
-    </div>
-
-    <div class="card">
-        <div class="poster">
-            <img src="./cards/p5.png" alt="">
-        </div>
-        <div class="details">
-            <h3>Shri Yogendra ji</h3>
-            <p>1929 - 2018</p>
-            <div class="info">
-                <p>Jaggi Vasudev, often referred to as ‘Sadhguru’ is an Indian yogi and 
-                  mystic who founded the ‘Isha Foundation,’ a non-profit organization which 
-                  offers yoga programs around the world. .............. </p>
-            </div>
-        </div>    
-    </div>
-    <div class="card">
-      <div class="poster">
-          <img src="./cards/p6.png" alt="">
-      </div>
-      <div class="details">
-          <h3>Tirumalai Krishnamacharya</h3>
-          <p>(1888-1989)</p>
-          <div class="info">
-              <p>Tirumalai Krishnamacharya  one of India’s most respected 
-                authorities on the Vedic tradition and Yoga teachings and practice. 
-                Krishnamacharya was probably the first Yoga Master to introduce the concept 
-                of “Vinyasa”.</p>
-          </div>
-      </div>    
-  </div>
-   
-    </div>
-   
-</section>
-
-<!-- Circle ruler -->
-<div class="dot-circe">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
-
-
-
-<!-- Poses -->
-<section class="Asans" id="asan">
-  <div class="heading">
-    <h1>Yoga Asans</h1>
-    <div class="ruler"></div>
-  </div> 
-
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="main">
-          <img src="./poses/p1.png" alt="">
-          <h3>Padmasana</h3>
-        </div>
-        <p>It is often used for meditation and breathing exercises. In this pose, each foot is placed on the opposite thigh, creating a stable and comfortable seated position. </p>
-        
-      </div>
-      <div class="swiper-slide">
-        <div class="main">
-          <img src="./poses/p2.png" alt="">
-          <h3>Utthita Trikonasana</h3>
-        </div>
-        <p>using a yoga block for your bottom hand if you aren't comfortable reaching your arm to the floor. You can also rest your hand higher up on your leg—on your shin or thigh</p>
-        
-      </div>
-      <div class="swiper-slide">
-        <div class="main">
-          <img src="./poses/p3.png" alt="">
-          <h3>Setu Bandhasana </h3>
-        </div>
-        <p>Setu Bandhasana is a yoga pose where the body is positioned in a bridge shape supported by the arms, legs and back. It is considered to be an intermediate-level posture and provides numerous physical and mental benefits.</p>
-        
-      </div>
-      <div class="swiper-slide">
-        <div class="main">
-          <img src="./poses/p4.png" alt="">
-          <h3>Utkatasana</h3>
-        </div>
-        <p>Utkatasana or Chair Pose, is a strengthening yoga posture that targets the muscles of the legs, back, and core. The knees are bent, and the hips are lowered, as if sitting in an imaginary chair in this pose with the arms raised overhead to complete it.</p>
-        
-      </div>
-      <div class="swiper-slide">
-        <div class="main">
-          <img src="./poses/p5.png" alt="">
-          <h3>Naukasana</h3>
-        </div>
-        <p>Naukasana is a variation of yoga poses for beginners in which our body takes the shape of a boat. It makes the circulation of blood and oxygen around the abdomen and lowers back time much faster. </p>
-        
-      </div>
-      <div class="swiper-slide">
-        <div class="main">
-          <img src="./poses/p6.png" alt="">
-          <h3>Urdhva Mukha Svanasana</h3>
-        </div>
-        <p>The Upward Facing Dog Pose is where the person starts in a prone yoga position, touching their belly to the floor and then lifts their chest and legs off the ground while keeping their arms extended. </p>
-        
-      </div>
-     
-      
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
-  
-</section>
-
-<!-- Circle ruler -->
-<div class="dot-circe">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
-
-<!-- Our experience with Leaders -->
-<section class="experience">
-  <div class="heading">
-    <h1>Leaders on Yoga</h1>
-    <div class="ruler"></div>
-  </div>
-
-  
- 
-        <div class="exp-container">
-          <div class="detail-box">
-            <h3>Shri Narendra Modi</h3>
-            <h5>Primer Minister of India</h5>
-            <p>“Yoga is an invaluable gift of India’s ancient tradition. It embodies unity of mind and body; thought and action; restraint and fulfilment; harmony between man and nature; a holistic approach to health and wellbeing. It is not about exercise but to discover a sense of oneness with yourself, the world, and nature."</p>
-          </div>
-          <div class="deatil-img">
-            <img src="./exp-image/modi.png" alt="">
           </div>
         </div>
-      
+      </section>
 
-      
-        <div class="exp-container">
-          <div class="detail-box">
-            <h3>Smt. Droupadi Murmu</h3>
-            <h5>President of India</h5>
-            <p>“Prevention is better than cure for a healthy life. If we remain ‘Yog-yukt’ (associated with Yoga), we can remain ‘Rog-mukt’ (free from diseases). Through yoga, we can attain a healthy body and a peaceful mind,”</p>
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Who Am I">About me</h3>
           </div>
-          <div class="deatil-img">
-            <img src="./exp-image/president.png" alt="">
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm">Hello, I'm</h3>
+              <p class="text">
+                I am a skilled and innovative React web app developer with a passion for creating dynamic and interactive web applications. With a deep understanding of modern web development practices and a commitment to delivering exceptional user experiences, I am dedicated to turning your ideas into fully functional and engaging web applications.
+              </p>
+              <div class="skills">
+                <div class="skill html">
+                  <h3 class="skill-title">HTML</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90%"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">CSS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">React</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/shapes/points4.png" class="points" alt="" />
+              <img src="./img/passport pic.png" class="z-index" alt="" />
+            </div>
           </div>
         </div>
+      </section>
+
+      <section class="records">
+        <div class="overlay overlay-sm">
+          <img src="./img/shapes/square.png" alt="" class="shape square1" />
+          <img src="./img/shapes/square.png" alt="" class="shape square2" />
+          <img src="./img/shapes/circle.png" alt="" class="shape circle" />
+          <img
+            src="./img/shapes/half-circle.png"
+            alt=""
+            class="shape half-circle"
+          />
+          <img src="./img/shapes/wave.png" alt="" class="shape wave wave1" />
+          <img src="./img/shapes/wave.png" alt="" class="shape wave wave2" />
+          <img src="./img/shapes/x.png" alt="" class="shape xshape" />
+          <img src="./img/shapes/triangle.png" alt="" class="shape triangle" />
+        </div>
+
+        <div class="container">
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="235">0</h2>
+              <h4 class="sub-title">Projects</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle active">
+              <h2 class="number" data-num="174">0</h2>
+              <h4 class="sub-title">Happy Clients</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="892">0</h2>
+              <h4 class="sub-title">Work Hour</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="368">0</h2>
+              <h4 class="sub-title">Awards</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
      
 
-      
-        <div class="exp-container">
-          <div class="detail-box">
-            <h3>Jagdeep Dhankhar</h3>
-            <h5>Vice-president of India</h5>
-            <p>Yoga has no barrier of age, caste, religion and regions, it is universal, Work for not just transforming our minds and bodies but also the overall transformation of the nation,</p>
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What People Say">Testimonials</h3>
           </div>
-          <div class="deatil-img">
-            <img src="./exp-image/dhankar.png" alt="">
+
+          <div class="testi-content grid-2">
+            <div class="column-1 reviews">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      "Working with shailesh attri was an absolute delight! They turned our e-commerce vision into a reality with their expertise in React web app development. Our online store is now faster, more responsive, and visually stunning.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Anuj Sharma</h3>
+                      <h5 class="review-job">Photographer, India</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      "I had the pleasure of collaborating with shailesh on an ambitious e-learning platform project. Their proficiency in building dynamic and interactive interfaces using React truly impressed me. They took our requirements to heart and created a user-friendly educational portal that exceeded our expectations.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Devesh singh</h3>
+                      <h5 class="review-job">Soft. Engg., Delhi</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      The real-time dashboard they crafted for us streamlined attendee registration, engagement tracking, and data analysis. Shailesh listened to our specific needs and provided innovative solutions that enhanced our operational efficiency. 
+
+                    <div class="review-info">
+                      <h3 class="review-name">Jack Costa</h3>
+                      <h5 class="review-job">Director of THR, London</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      "Shailesh Attri has been an invaluable asset to our agency's web development projects. Their proficiency in React and ability to grasp complex requirements quickly have made them an integral part of our team.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Reiss Mccartney</h3>
+                      <h5 class="review-job">Engineer, San Francisco</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-nav swiper-button-prev">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="review-nav swiper-button-next">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/testi.png" alt="" class="img-element" />
+            </div>
           </div>
         </div>
-      
+      </section>
 
-     
-        
-        
-    
-  
- 
-</section> 
-
-
-
-
-
-
-
-    <!--               -->
-    <!--               -->
-   
-        <!-- ----------------- -->
-        <!-- ----------------- -->
-
-        <section class="links" id="contact-us">
-            <div class="all-container">
-                <div class="box">
-                    <h3>Quick links</h3>
-                    <a href="#home"> <i class="fas fa-chevron-right"></i> Home </a>
-                    <a href="#asan"> <i class="fas fa-chevron-right"></i> Yoga Asans </a>
-                    <a href="#yoga-guru"> <i class="fas fa-chevron-right"></i> Yoga Guru </a>
-                    <a href="#hospital"> <i class="fas fa-chevron-right"></i> About us </a>
-                    
-                    
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <h3 class="title">Get in touch</h3>
+              <p class="text">
+                Absolutely, if you're interested in discussing your project, collaborating, or have any inquiries, feel free to get in touch with me:
+              </p>
+              <div class="information-wrap">
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p class="info-text">Noida, India</p>
                 </div>
-                
-                <div class="box">
-                    <h3>contact info</h3>
-                    <a href=""> <i class="fas fa-phone"></i> +919045074895 </a>
-                    <a href=""> <i class="fas fa-phone"></i> +91-6464416108 </a>
-                
-                    <a href=""> <i class="fas fa-envelope"></i> yogaacademy@gmail.com </a>
-                    <a href=""> <i class="fas fa-map-marker-alt"></i> Greater Noida, 212144</a>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  <p class="info-text">shaileshattri83@gmail.com</p>
                 </div>
-                <div class="box">
-                    <h3>Follow us</h3>
-                    <a href=""> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href=""> <i class="fab fa-twitter"></i> twitter </a>
-            
-            <a href=""> <i class="fab fa-instagram"></i> instagram </a>
-            <a href=""> <i class="fab fa-linkedin"></i> linkedin </a>
-            
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <p class="info-text">+91 9045074895</p>
                 </div>
+              </div>
             </div>
-           
-        </section>
-        <div class="creator">
-          <span>Developed by Shailesh Attri &nbsp;|</span>  
-          <span> &nbsp;University Project &nbsp;| </span>
-          <span> &nbsp;Other Members : Nitish Kumar & Krishan Kant Tiwari&nbsp;| </span>
-          <span> &nbsp;All Rights Reserved</span>
+
+            <div class="contact-form">
+              <h3 class="title">Contact me</h3>
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Last Name"
+                />
+              </div>
+
+              <div class="row">
+                <input type="text" class="contact-input" placeholder="Phone" />
+                <input type="email" class="contact-input" placeholder="Email" />
+              </div>
+
+              <div class="row">
+                <textarea
+                  name="message"
+                  class="contact-input textarea"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <a href="#" class="btn">Send</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title">Let's talk about a project</h3>
+          <p class="text">
+            I'd be glad to discuss your project! Please provide me with more details about your project, including the scope, objectives, any specific requirements, and your expectations. This will help me understand how I can best assist you and provide you with relevant information and suggestions. Feel free to share as much information as you can, and we can start a productive conversation about your project.
+          </p>
+          <a href="#" class="btn">Hire me</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">About</h3>
+            <p class="text">
+              I am a skilled and innovative React web app developer with a passion for creating dynamic and interactive web applications. With a deep understanding of modern web development practices and a commitment to delivering exceptional user experiences
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Services</h3>
+            <ul>
+              <li>
+                <a href="#">Web Design</a>
+              </li>
+              <li>
+                <a href="#">Web Dev</a>
+              </li>
+              <li>
+                <a href="#">App Design</a>
+              </li>
+              <li>
+                <a href="#">Marketing</a>
+              </li>
+              <li>
+                <a href="#">UI Design</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-newstletter">
+            <h3 class="title-sm">Subscribe</h3>
+            <p class="text">
+              Stay updated with the latest insights, trends, and information! Subscribe to our newsletter to receive valuable content straight to your inbox. Don't miss out on exciting news, tips, and offers. Join our community today!
+            </p>
+            <div class="footer-input-wrap">
+              <input type="email" class="footer-input" placeholder="Email" />
+              <a href="#" class="input-arrow">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
-      
-       
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2023 All rights reserved | Made by
+              <span class="split-text" data-text="FORUM"><a
+                href="https://dopedevelopers.com/" > Dope developers </a></span>
+             
+            </p>
+          </div>
 
-        
-        <!-- <footer class="my-footer">
-            <div class="footer">
-                <p>Created by Shailesh Attri | All rights reserved </p>
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Follow me</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
             </div>
-        </footer> -->
-        
-        <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="swiper.js"></script>
-</body> 
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
-
-
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  <!-- Demo styles -->
-  <style>
-    .heading {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-
-
-    .swiper {
-      width: 100%;
-      height: 500px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      padding: 1rem;
-      background-color: transparent;
-      border: 2px solid var(--main-color);
-      width: 300px;
-      height: 400px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    }
-    .swiper-slide .main{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      gap: 1rem;
-    }
-    .swiper-slide .main img{
-      width: 150px;
-      height: auto;
-    }
-    .swiper-slide p{
-      margin-top: 1.5rem;
-      font-size: 15px;
-    }
-
-    
-  </style>
-
-
-
-  <!-- Swiper -->
- 
-
-
-
-
-
-
-  
